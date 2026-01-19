@@ -1,0 +1,7 @@
+google-cloud-aiplatform
+google-adk
+python-dotenv
+python-docx
+PyMuPDF
+streamlit
+google.adk.types
