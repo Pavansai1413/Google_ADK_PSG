@@ -111,6 +111,71 @@ It's important to distinguish an Agent-as-a-Tool from a Sub-Agent.
 - Sub-agent: When Agent A calls Agent B as a sub-agent, the responsibility of answering the user is completely transferred to Agent B. Agent A is effectively out of the loop. All subsequent user input will be answered by Agent B.
 
 
+
+# Runtime Event Loop:
+
+
+The ADK Runtime is the underlying engine that powers your agent application during user interactions. It's the system that takes your defined agents, tools, and callbacks and orchestrates their execution in response to user input, managing the flow of information, state changes, and interactions with external services like LLMs or storage.
+
+Think of the Runtime as the "engine" of your agentic application. You define the parts (agents, tools), and the Runtime handles how they connect and run together to fulfill a user's request.
+
+![alt text](images/image_7.png)
+
+At its heart, the ADK Runtime operates on an Event Loop. This loop facilitates a back-and-forth communication between the Runner component and your defined "Execution Logic" (which includes your Agents, the LLM calls they make, Callbacks, and Tools).
+
+In simple terms:
+
+- The Runner receives a user query and asks the main Agent to start processing.
+- The Agent (and its associated logic) runs until it has something to report (like a response, a request to use a tool, or a state change) – it then yields or emits an Event.
+- The Runner receives this Event, processes any associated actions (like saving state changes via Services), and forwards the event onwards (e.g., to the user interface).
+- Only after the Runner has processed the event does the Agent's logic resume from where it paused, now potentially seeing the effects of the changes committed by the Runner.
+- This cycle repeats until the agent has no more events to yield for the current user query.
+- This event-driven loop is the fundamental pattern governing how ADK executes your agent code.
+
+
+# Key components of the Runtime:
+Several components work together within the ADK Runtime to execute an agent invocation. Understanding their roles clarifies how the event loop functions:
+
+## Runner:
+**Role:** The main entry point and orchestrator for a single user query (run_async).
+
+**Function:** Manages the overall Event Loop, receives events yielded by the Execution Logic, coordinates with Services to process and commit event actions (state/artifact changes), and forwards processed events upstream (e.g., to the UI). It essentially drives the conversation turn by turn based on yielded events. (Defined in google.adk.runners.runner).
+
+## Execution Logic Components:
+**Role:** The parts containing your custom code and the core agent capabilities.
+
+**Components:**
+- Agent (BaseAgent, LlmAgent, etc.): Your primary logic units that process information and decide on actions. They implement the _run_async_impl method which yields events.
+- Tools (BaseTool, FunctionTool, AgentTool, etc.): External functions or capabilities used by agents (often LlmAgent) to interact with the outside world or perform specific tasks. They execute and return results, which are then wrapped in events.
+- Callbacks (Functions): User-defined functions attached to agents (e.g., before_agent_callback, after_model_callback) that hook into specific points in the execution flow, potentially modifying behavior or state, whose effects are captured in events.
+
+**Function:** Perform the actual thinking, calculation, or external interaction. They communicate their results or needs by yielding Event objects and pausing until the Runner processes them.
+
+## Event:
+**Role:** The message passed back and forth between the Runner and the Execution Logic.
+
+**Function:** Represents an atomic occurrence (user input, agent text, tool call/result, state change request, control signal). It carries both the content of the occurrence and the intended side effects (actions like state_delta).
+
+## Services:
+**Role:** Backend components responsible for managing persistent or shared resources. Used primarily by the Runner during event processing.
+
+**Components:**
+- SessionService (BaseSessionService, InMemorySessionService, etc.): Manages Session objects, including saving/loading them, applying state_delta to the session state, and appending events to the event history.
+- ArtifactService (BaseArtifactService, InMemoryArtifactService, GcsArtifactService, etc.): Manages the storage and retrieval of binary artifact data. Although save_artifact is called via context during execution logic, the artifact_delta in the event confirms the action for the Runner/SessionService.
+- MemoryService (BaseMemoryService, etc.): (Optional) Manages long-term semantic memory across sessions for a user.
+
+**Function:** Provide the persistence layer. The Runner interacts with them to ensure changes signaled by event.actions are reliably stored before the Execution Logic resumes.
+
+## Session:
+**Role:** A data container holding the state and history for one specific conversation between a user and the application.
+
+**Function:** Stores the current state dictionary, the list of all past events (event history), and references to associated artifacts. It's the primary record of the interaction, managed by the SessionService.
+
+## Invocation:
+**Role:** A conceptual term representing everything that happens in response to a single user query, from the moment the Runner receives it until the agent logic finishes yielding events for that query.
+
+**Function:** An invocation might involve multiple agent runs (if using agent transfer or AgentTool), multiple LLM calls, tool executions, and callback executions, all tied together by a single invocation_id within the InvocationContext. State variables prefixed with temp: are strictly scoped to a single invocation and discarded afterwards.
+
 ## Installation:
 Install ADK by running the following command:
 
@@ -156,7 +221,17 @@ Follow this accelerated deployment path if you do not have an existing Google Cl
 ### 2. Cloud Run:
 Cloud Run is a managed auto-scaling compute platform on Google Cloud that enables you to run your agent as a container-based application.
 
+**Cloud Run services:**
+
+A Cloud Run service provides you with the infrastructure required to run a reliable HTTPS endpoint. Your responsibility is to make sure your code listens on a TCP port and handles HTTP requests.
+
+The following diagram shows a Cloud Run service running several container instances to handle web requests and events from the client using an HTTPS endpoint.
+
+![alt text](images/image_9.png)
+
 The agent will be a FastAPI application that uses Gemini 2.5 Pro as the LLM. We can use Vertex AI or AI Studio as the LLM provider using the Environment variable GOOGLE_GENAI_USE_VERTEXAI.
+
+
 
 ```bash
 export GOOGLE_CLOUD_PROJECT=your-project-id # Your GCP project ID
@@ -254,12 +329,15 @@ gcloud artifacts repositories create adk-apps `
   --location=us-central1 `
   --description="ADK apps container repo"
 ```
+![alt text](images/image_4.png)
 
 **Step3: Build the container image using the gcloud command line tool. This example builds the image and tags it as adk-repo/adk-agent:latest.**
 
 ```bash
 gcloud builds submit . --tag us-central1-docker.pkg.dev/vertex-ai-demo-psg/adk-apps/interview-simulator
 ```
+![alt text](images/image_5.png)
+
 **Step4: Verify the image is built and pushed to the Artifact Registry:**
 
 ```bash
@@ -280,11 +358,30 @@ gcloud run deploy interview-simulator `
   --cpu 1
 ```
 
+![alt text](images/image_3.png)
+
+**Step6: Test the deployment:**
+
+```bash
+curl -X POST https://interview-simulator-630041212894.us-central1.run.app/chat -H "Content-Type: application/json" -d "{\"message\": \"Hi\", \"streaming\": false}"
+```
+
+![alt text](images/image_6.png)
+
 ### 3. Google Kubernetes Engine (GKE):
 Google Kubernetes Engine (GKE) is a managed Kubernetes service of Google Cloud that allows you to run your agent in a containerized environment. GKE is a good option if you need more control over the deployment as well as for running Open Models.
 
 
+# Observability:
 
+![alt text](images/image_8.png)
+
+# References:
+  -https://github.com/google/adk-samples/tree/main/python/agents/financial-advisor
+
+  -https://google.github.io/adk-docs/deploy/
+
+  -https://google.github.io/adk-docs/runtime/
 
 
 
@@ -344,3 +441,7 @@ flowchart TD
     B --> interviewer_agent
     B --> validator_agent
     ```
+
+
+
+
