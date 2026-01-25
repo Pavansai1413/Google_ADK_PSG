@@ -132,6 +132,161 @@ The ADK framework provides web interface you can use to test and interact with y
 adk web
 ```
 
+## Deploying Your Agent:
+Deployment moves your agent from your local development machine to a scalable and reliable environment.
+
+![alt text](images/image_2.png)
+
+## Deployment Options:
+Your ADK agent can be deployed to a range of different environments based on your needs for production readiness or custom flexibility:
+
+### 1. Agent Engine in Vertex AI:
+Agent Engine is a fully managed auto-scaling service on Google Cloud specifically designed for deploying, managing, and scaling AI agents built with frameworks such as ADK.
+
+When you deploy an ADK agent to Agent Engine, your code runs in the Agent Engine runtime environment, which is part of the larger set of agent services provided by the Agent Engine product.
+
+**(a) Standard deployment:** 
+
+Follow this standard deployment path if you have an existing Google Cloud project and if you want to carefully manage deploying an ADK agent to the Agent Engine runtime. This deployment path uses Cloud Console, ADK command line interface, and provides step-by-step instructions. This path is recommended for users who are already familiar with configuring Google Cloud projects, and users preparing for production deployments.
+
+**(b) Agent Starter Pack deployment:** 
+
+Follow this accelerated deployment path if you do not have an existing Google Cloud project and are creating a project specifically for development and testing. The Agent Starter Pack (ASP) helps you deploy ADK projects quickly and it configures Google Cloud services that are not strictly necessary for running an ADK agent with the Agent Engine runtime.
+
+### 2. Cloud Run:
+Cloud Run is a managed auto-scaling compute platform on Google Cloud that enables you to run your agent as a container-based application.
+
+The agent will be a FastAPI application that uses Gemini 2.5 Pro as the LLM. We can use Vertex AI or AI Studio as the LLM provider using the Environment variable GOOGLE_GENAI_USE_VERTEXAI.
+
+```bash
+export GOOGLE_CLOUD_PROJECT=your-project-id # Your GCP project ID
+export GOOGLE_CLOUD_LOCATION=us-central1 # Or your preferred location
+export GOOGLE_GENAI_USE_VERTEXAI=true # Set to true if using Vertex AI
+export GOOGLE_CLOUD_PROJECT_NUMBER=$(gcloud projects describe --format json $GOOGLE_CLOUD_PROJECT | jq -r ".projectNumber")
+```
+**Enable APIs and Permissions:**
+
+```bash
+gcloud services enable \
+    container.googleapis.com \
+    artifactregistry.googleapis.com \
+    cloudbuild.googleapis.com \
+    aiplatform.googleapis.com
+```
+
+**Deployment payload:**
+
+The following content is uploaded to the service:
+
+- Your ADK agent code
+- Any dependencies declared in your ADK agent code
+- ADK API server code version used by your agent
+- The default deployment does not include the ADK web user interface libraries, unless you specify it as deployment setting, such as the --with_ui option for adk deploy gke command.
+
+
+**Project structure:**
+
+```bash
+google_adk_psg/
+├── .adk/
+├── .env
+├── .gitignore
+├── Interview_simulator/
+│   ├── __init__.py
+│   ├── prompt.py
+│   ├── router_agent.py
+│   ├── sub_agents/
+│   │   ├── analyzer_agent/
+│   │   │   ├── __init__.py
+│   │   │   ├── analyzer_agent.py
+│   │   │   └── prompt.py
+│   │   ├── interviewer_agent/
+│   │   │   ├── __init__.py
+│   │   │   ├── interviewer_agent.py
+│   │   │   └── prompt.py
+│   │   └── validation_agent/
+│   │       ├── __init__.py
+│   │       ├── prompt.py
+│   │       └── validation_agent.py
+│   └── tools/
+│       ├── __init__.py
+│       ├── document_parser.py
+│       └── parse_tool.py
+├── README.md
+├── app.py
+├── deployment/
+│   └── deploy.py
+├── dockerfile
+├── images/
+├── myenv/
+├── requirements.txt
+├── temp_Jd.docx
+└── temp_PavanG_Resume_Base.docx
+```
+
+**Requirements:**
+
+```bash
+google-adk==1.22.1
+google-cloud-aiplatform>=1.132.0,<2.0.0
+google-generativeai>=0.5,<1.0
+python-dotenv
+python-docx
+python-multipart
+PyMuPDF
+vertexai
+fastapi
+uvicorn
+asyncio
+```
+
+**Step1: Build the container image:**
+
+```bash
+docker build -t interview-simulator .
+```
+
+**Step2: You need to create a Google Artifact Registry repository to store your container images. You can do this using the gcloud command line tool.**
+
+```bash
+gcloud artifacts repositories create adk-apps `
+  --repository-format=docker `
+  --location=us-central1 `
+  --description="ADK apps container repo"
+```
+
+**Step3: Build the container image using the gcloud command line tool. This example builds the image and tags it as adk-repo/adk-agent:latest.**
+
+```bash
+gcloud builds submit . --tag us-central1-docker.pkg.dev/vertex-ai-demo-psg/adk-apps/interview-simulator
+```
+**Step4: Verify the image is built and pushed to the Artifact Registry:**
+
+```bash
+gcloud artifacts docker images list \
+  $GOOGLE_CLOUD_LOCATION-docker.pkg.dev/$GOOGLE_CLOUD_PROJECT/adk-apps \
+  --project=$GOOGLE_CLOUD_PROJECT
+```
+**Step5: Deploy the container image to Google Cloud Run:**
+
+```bash
+gcloud run deploy interview-simulator `
+  --image us-central1-docker.pkg.dev/vertex-ai-demo-psg/adk-apps/interview-simulator `
+  --platform managed `
+  --region us-central1 `
+  --allow-unauthenticated `
+  --port 8080 `
+  --memory 1Gi `
+  --cpu 1
+```
+
+### 3. Google Kubernetes Engine (GKE):
+Google Kubernetes Engine (GKE) is a managed Kubernetes service of Google Cloud that allows you to run your agent in a containerized environment. GKE is a good option if you need more control over the deployment as well as for running Open Models.
+
+
+
+
+
 
 ## Multi Agent Architecture:
 

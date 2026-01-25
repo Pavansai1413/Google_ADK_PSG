@@ -19,6 +19,9 @@ dist/
 # Package files
 *.jar
 
+# Exclude temp files
+temp_*
+
 # Maven
 target/
 dist/
@@ -48,3 +51,10 @@ Thumbs.db
 *.mov
 *.wmv
 
+# Exclude any other junk
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.db  # local session.db
