@@ -9,6 +9,8 @@ vertexai
 fastapi
 uvicorn
 asyncio
+pytest
+pydantic
 
 
 

@@ -376,6 +376,199 @@ Google Kubernetes Engine (GKE) is a managed Kubernetes service of Google Cloud t
 
 ![alt text](images/image_8.png)
 
+## 1. Logging in the Agent Development Kit (ADK):
+
+The Agent Development Kit (ADK) uses Python's standard logging module to provide flexible and powerful logging capabilities. Understanding how to configure and interpret these logs is crucial for monitoring agent behavior and debugging issues effectively.
+
+**How to Configure Logging:**
+
+You can configure logging in your main application script (e.g., main.py) before you initialize and run your agent. The simplest way is to use logging.basicConfig.
+
+```python
+import logging
+
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s'
+)
+```
+**The available log levels for the --log_level option are:**
+
+- DEBUG
+- INFO (default)
+- WARNING
+- ERROR
+- CRITICAL
+
+![alt text](images/image_10.png)
+
+## 2. Cloud Trace:
+
+With ADK, you’ve already capable of inspecting and observing your agent interaction locally. However, if we aim for cloud deployment, we will need a centralized dashboard to observe real traffic.
+
+Cloud Trace is a component of Google Cloud Observability. It is a powerful tool for monitoring, debugging, and improving the performance of your applications by focusing specifically on tracing capabilities. For Agent Development Kit (ADK) applications, Cloud Trace enables comprehensive tracing, helping you understand how requests flow through your agent's interactions and identify performance bottlenecks or errors within your AI agents.
+
+# Why Evaluate Agents:
+
+- In traditional software development, unit tests and integration tests provide confidence that code functions as expected and remains stable through changes. These tests provide a clear "pass/fail" signal, guiding further development.
+
+- However, LLM agents introduce a level of variability that makes traditional testing approaches insufficient.
+
+- Instead, we need qualitative evaluations of both the final output and the agent's trajectory - the sequence of steps taken to reach the solution. This involves assessing the quality of the agent's decisions, its reasoning process, and the final result.
+
+![alt text](images/image_11.png)
+
+
+## What to Evaluate?:
+
+To bridge the gap between a proof-of-concept and a production-ready AI agent, a robust and automated evaluation framework is essential. Unlike evaluating generative models, where the focus is primarily on the final output, agent evaluation requires a deeper understanding of the decision-making process. Agent evaluation can be broken down into two components:
+
+- **Evaluating Trajectory and Tool Use:** Analyzing the steps an agent takes to reach a solution, including its choice of tools, strategies, and the efficiency of its approach.
+- **Evaluating the Final Response:** Assessing the quality, relevance, and correctness of the agent's final output.
+
+
+## How Evaluation works with the ADK:
+The ADK offers two methods for evaluating agent performance against predefined datasets and evaluation criteria. While conceptually similar, they differ in the amount of data they can process, which typically dictates the appropriate use case for each.
+
+**1. First approach: Using a test file**
+
+This approach involves creating individual test files, each representing a single, simple agent-model interaction (a session). It's most effective during active agent development, serving as a form of unit testing. These tests are designed for rapid execution and should focus on simple session complexity. Each test file contains a single session, which may consist of multiple turns. A turn represents a single interaction between the user and the agent. Each turn includes
+
+- **User Content:** The user issued query.
+
+- **Expected Intermediate Tool Use Trajectory:** The tool calls we expect the agent to make in order to respond correctly to the user query.
+
+- **Expected Intermediate Agent Responses:** These are the natural language responses that the agent (or sub-agents) generates as it moves towards generating a final answer. These natural language responses are usually an artifact of an multi-agent system, where your root agent depends on sub-agents to achieve a goal. These intermediate responses, may or may not be of interest to the end user, but for a developer/owner of the system, are of critical importance, as they give you the confidence that the agent went through the right path to generate final response.
+
+- **Final Response:** The expected final response from the agent.
+
+You can give the file any name for example evaluation.test.json. The framework only checks for the .test.json suffix, and the preceding part of the filename is not constrained. The test files are backed by a formal Pydantic data model. The two key schema files are Eval Set and Eval Case
+
+
+**2. Second approach: Using An Evalset File:**
+
+The evalset approach utilizes a dedicated dataset called an "evalset" for evaluating agent-model interactions. An evalset file contains multiple "evals," each representing a distinct session. Each eval consists of one or more "turns," which include the user query, expected tool use, expected intermediate agent responses, and a reference response.
+
+
+## Evaluation Criteria:
+
+ADK provides several built-in criteria for evaluating agent performance, ranging from tool trajectory matching to LLM-based response quality assessment.
+
+Here is a summary of all the available criteria:
+
+- **tool_trajectory_avg_score:** Exact match of tool call trajectory.
+
+- **response_match_score:** ROUGE-1 similarity to reference response.
+
+- **final_response_match_v2:** LLM-judged semantic match to a reference response.
+
+- **rubric_based_final_response_quality_v1:** LLM-judged final response quality based on custom rubrics.
+
+- **rubric_based_tool_use_quality_v1:** LLM-judged tool usage quality based on custom rubrics.
+
+- **hallucinations_v1:** LLM-judged groundedness of agent response against context.
+
+- **safety_v1:** Safety/harmlessness of agent response.
+
+If no evaluation criteria are provided, the following default configuration is used:
+
+- **tool_trajectory_avg_score:** Defaults to 1.0, requiring a 100% match in the tool usage trajectory.
+
+- **response_match_score:** Defaults to 0.8, allowing for a small margin of error in the agent's natural language responses.
+
+![alt text](images/image_15.png)
+
+
+**Sample config file:**
+
+```python
+{
+    "criteria": {
+        "tool_trajectory_avg_score": {
+            "threshold": 1.0,
+            "match_type": "ANY_ORDER"
+        },
+        "response_match_score": {
+            "threshold": 0.6
+        },
+        "final_response_match_v2": {
+            "threshold": 0.7,
+            "judge_model_options": {
+                "judge_model": "gemini-2.5-flash",
+                "num_samples": 3
+            }
+        }
+    }
+}
+
+```
+
+## Pytest Evaluation Method:
+![alt text](images/image_13.png)
+
+## ADK CLI Method:
+``` bash
+
+ adk eval `
+>>   .\Interview_simulator `
+>>   .\eval\data\interview_simulator.test.json `
+>>   --config_file_path .\eval\eval_config.json `
+>>   --print_detailed_results
+
+```
+
+
+![alt text](images/image_12.png)
+
+![alt text](images/image_14.png)
+
+
+# Safety and Security for AI Agents:
+
+As AI agents grow in capability, ensuring they operate safely, securely, and align with your brand values is paramount. Uncontrolled agents can pose risks, including executing misaligned or harmful actions, such as data exfiltration, and generating inappropriate content that can impact your brand’s reputation. Sources of risk include vague instructions, model hallucination, jailbreaks and prompt injections from adversarial users, and indirect prompt injections via tool use.
+
+Google Cloud Vertex AI provides a multi-layered approach to mitigate these risks, enabling you to build powerful and trustworthy agents. It offers several mechanisms to establish strict boundaries, ensuring agents only perform actions you've explicitly allowed:
+
+- **Identity and Authorization:** Control who the agent acts as by defining agent and user auth.
+- **Guardrails to screen inputs and outputs:** Control your model and tool calls precisely.
+
+  - **In-Tool Guardrails:** Design tools defensively, using developer-set tool context to enforce policies (e.g., allowing queries only on specific tables).
+
+  - **Built-in Gemini Safety Features:** If using Gemini models, benefit from content filters to block harmful outputs and system Instructions to guide the model's behavior and safety guidelines
+
+**Harm categories:**
+
+Content filters assess content based on the following harm categories:
+
+| Harm Category        | Definition                                                                 |
+|----------------------|-----------------------------------------------------------------------------|
+| Hate Speech          | Negative or harmful comments targeting identity and/or protected attributes |
+| Harassment           | Threatening, intimidating, bullying, or abusive comments targeting another individual |
+| Sexually Explicit    | Contains references to sexual acts or other lewd content                     |
+| Dangerous Content    | Promotes or enables access to harmful goods, services, and activities        |
+
+
+
+
+``` bash
+generative_models.SafetySetting(
+  category=generative_models.HarmCategory.HARM_CATEGORY_DANGEROUS_CONTENT,
+  threshold=generative_models.HarmBlockThreshold.BLOCK_ONLY_HIGH,
+),
+
+```
+  - **Callbacks and Plugins:** Validate model and tool calls before or after execution, checking parameters against agent state or external policies.
+
+  - **Using Gemini as a safety guardrail:** Implement an additional safety layer using a cheap and fast model (like Gemini Flash Lite) configured via callbacks to screen inputs and outputs.
+
+- **Sandboxed code execution:** Prevent model-generated code to cause security issues by sandboxing the environment
+
+- **Evaluation and tracing:** Use evaluation tools to assess the quality, relevance, and correctness of the agent's final output. Use tracing to gain visibility into agent actions to analyze the steps an agent takes to reach a solution, including its choice of tools, strategies, and the efficiency of its approach.
+
+- **Network Controls and VPC-SC:** Confine agent activity within secure perimeters (like VPC Service Controls) to prevent data exfiltration and limit the potential impact radius.
+
+
+
 # References:
   -https://github.com/google/adk-samples/tree/main/python/agents/financial-advisor
 
