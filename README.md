@@ -374,8 +374,6 @@ Google Kubernetes Engine (GKE) is a managed Kubernetes service of Google Cloud t
 
 # Observability:
 
-![alt text](images/image_8.png)
-
 ## 1. Logging in the Agent Development Kit (ADK):
 
 The Agent Development Kit (ADK) uses Python's standard logging module to provide flexible and powerful logging capabilities. Understanding how to configure and interpret these logs is crucial for monitoring agent behavior and debugging issues effectively.
@@ -407,6 +405,8 @@ logging.basicConfig(
 With ADK, you’ve already capable of inspecting and observing your agent interaction locally. However, if we aim for cloud deployment, we will need a centralized dashboard to observe real traffic.
 
 Cloud Trace is a component of Google Cloud Observability. It is a powerful tool for monitoring, debugging, and improving the performance of your applications by focusing specifically on tracing capabilities. For Agent Development Kit (ADK) applications, Cloud Trace enables comprehensive tracing, helping you understand how requests flow through your agent's interactions and identify performance bottlenecks or errors within your AI agents.
+
+![alt text](images/image_8.png)
 
 # Why Evaluate Agents:
 
@@ -522,7 +522,6 @@ If no evaluation criteria are provided, the following default configuration is u
 
 ![alt text](images/image_14.png)
 
-
 # Safety and Security for AI Agents:
 
 As AI agents grow in capability, ensuring they operate safely, securely, and align with your brand values is paramount. Uncontrolled agents can pose risks, including executing misaligned or harmful actions, such as data exfiltration, and generating inappropriate content that can impact your brand’s reputation. Sources of risk include vague instructions, model hallucination, jailbreaks and prompt injections from adversarial users, and indirect prompt injections via tool use.
@@ -535,6 +534,16 @@ Google Cloud Vertex AI provides a multi-layered approach to mitigate these risks
   - **In-Tool Guardrails:** Design tools defensively, using developer-set tool context to enforce policies (e.g., allowing queries only on specific tables).
 
   - **Built-in Gemini Safety Features:** If using Gemini models, benefit from content filters to block harmful outputs and system Instructions to guide the model's behavior and safety guidelines
+
+  - **Callbacks and Plugins:** Validate model and tool calls before or after execution, checking parameters against agent state or external policies.
+
+  - **Using Gemini as a safety guardrail:** Implement an additional safety layer using a cheap and fast model (like Gemini Flash Lite) configured via callbacks to screen inputs and outputs.
+
+- **Sandboxed code execution:** Prevent model-generated code to cause security issues by sandboxing the environment
+
+- **Evaluation and tracing:** Use evaluation tools to assess the quality, relevance, and correctness of the agent's final output. Use tracing to gain visibility into agent actions to analyze the steps an agent takes to reach a solution, including its choice of tools, strategies, and the efficiency of its approach.
+
+- **Network Controls and VPC-SC:** Confine agent activity within secure perimeters (like VPC Service Controls) to prevent data exfiltration and limit the potential impact radius.
 
 **Harm categories:**
 
@@ -557,15 +566,7 @@ generative_models.SafetySetting(
 ),
 
 ```
-  - **Callbacks and Plugins:** Validate model and tool calls before or after execution, checking parameters against agent state or external policies.
 
-  - **Using Gemini as a safety guardrail:** Implement an additional safety layer using a cheap and fast model (like Gemini Flash Lite) configured via callbacks to screen inputs and outputs.
-
-- **Sandboxed code execution:** Prevent model-generated code to cause security issues by sandboxing the environment
-
-- **Evaluation and tracing:** Use evaluation tools to assess the quality, relevance, and correctness of the agent's final output. Use tracing to gain visibility into agent actions to analyze the steps an agent takes to reach a solution, including its choice of tools, strategies, and the efficiency of its approach.
-
-- **Network Controls and VPC-SC:** Confine agent activity within secure perimeters (like VPC Service Controls) to prevent data exfiltration and limit the potential impact radius.
 
 
 

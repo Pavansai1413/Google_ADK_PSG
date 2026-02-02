@@ -41,7 +41,8 @@ app: FastAPI = get_fast_api_app(
     agents_dir = AGENT_DIR,
     session_service_uri = SESSION_SERVICE_URI,
     allow_origins = ALLOWED_ORIGINS,
-    web=SERVE_WEB_INTERFACE
+    web=SERVE_WEB_INTERFACE,
+    trace_to_cloud=True
 )
 
 logging.basicConfig(level=logging.INFO)

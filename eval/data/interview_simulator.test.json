@@ -70,6 +70,18 @@
                                 "args": {
                                     "file_path": "C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx"
                                 }
+                            },
+                            {
+                                "name": "analyzer_agent",
+                                "args": {
+                                    "request": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview."
+                                }
+                            },
+                            {
+                                "name": "interviewer_agent",
+                                "args": {
+                                    "request": "Start the interview."
+                                }
                             }
                         ],
                         "intermediate_responses": []
