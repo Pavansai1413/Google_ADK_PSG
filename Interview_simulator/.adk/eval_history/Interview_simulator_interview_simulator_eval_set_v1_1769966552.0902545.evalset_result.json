@@ -1,0 +1,639 @@
+{
+  "eval_set_result_id": "Interview_simulator_interview_simulator_eval_set_v1_1769966552.0902545",
+  "eval_set_result_name": "Interview_simulator_interview_simulator_eval_set_v1_1769966552.0902545",
+  "eval_set_id": "interview_simulator_eval_set_v1",
+  "eval_case_results": [
+    {
+      "eval_set_file": "interview_simulator_eval_set_v1",
+      "eval_set_id": "interview_simulator_eval_set_v1",
+      "eval_id": "case_2_provide_files",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "judge_model_options": null,
+          "criterion": {
+            "threshold": 1.0,
+            "match_type": "ANY_ORDER"
+          },
+          "score": 0.0,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.6,
+          "judge_model_options": null,
+          "criterion": {
+            "threshold": 0.6
+          },
+          "score": 0.25974025974025977,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.7,
+          "judge_model_options": null,
+          "criterion": {
+            "threshold": 0.7,
+            "judge_model_options": {
+              "judge_model": "gemini-2.5-flash",
+              "num_samples": 3
+            }
+          },
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-52999e23-1f74-4403-bb36-679ae70dc163",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello, and thank you for your time today. I've reviewed the analysis of your resume against our job description. Based on that, I'd like to ask you a few questions to understand your experience better.\n\nWe'll start with five questions, and then we can see if more are needed.\n\nMy first question is about an area the analysis highlighted as a potential gap. The job requires experience with causal inference. Could you describe a situation where you needed to determine the causal impact of an action or intervention, as opposed to just forecasting an outcome? For instance, measuring the true effect of a marketing campaign on sales. How would you approach this, and what are the key assumptions and limitations of your proposed method?",
+                  "thought": null,
+                  "thought_signature": "Cq0NAY89a1_gER1b2F6TOGcb_rSVdNQWH4_ETvuNWYxB1zNOMmv0MHQYCsimq3R_d484cQ33P-XFfFdR4LoedMRLRVvbsEQpWySuaD25eudkOzbw7IlrAhjXnuhise219RkeGhOdPPEwySDV83ZBY2lUiKlbjDeIeLSTA_E0892kK1qVjtH_UNRCegYI3ousNKnOywnue9lbnILP4rm0_-DvPErqRjuJUmoBd94bYVefMEoD2ZoLem9D7INYR1FSj7VkftIY49vEGiNDpwI7VYqT5KbOohZCrKuIhWE8eRgK85RRaQ2U7Msa8thOaXy8tGw_eUE-r9Y9SpFTiWbdADlShmgr06RSLjX5c7WxgBlJHcXis9PhYGiWL1aCyVC4ygEMBLDNxIoWl888Zo2_vTV-ovgmqXUq2BCkmqkLDyhmrpGPO8d-rUZ1EvMF-mFJGAoMuT9nlxpVuzGvQFE3uEWtBlXwbS8FYWNPWEU_RmbZWoJ_4CT3fxynRTzWOVkyzJTC8QP9u8VQTyJxqioGbkzW5yvHMoSRXRJznyjTr9Dcdqy9s140Mp6vHy31kT6sWhF1HIOLW-Oj74i9vEoDK1cXZL835KP_RV8wAiIvURym-zJuFu8RJoMZwbDTcwI81srgZ-LhW-AiRGdZo7JGXJ0ET92F_UxTMixvocoaKhVx_mUokzLnY_RlptCfdWQ5ops7WE8ZlpEWa-r_04drhIqUXSu6Rx3HZAnA9ho1hTCRy2tOXQIVFmLfFLI4lNO76wtZiZpRFvgQjMe-vGbe5NYfvswmyw-Q0z09DKOJOzZdZSRPeEhWYaIcm_o6mLB5PH6_P98oMZcPrkU9hapUcGfMB-pp1KxTtwDhqfnL5sIuawmueTbycY_oRCFMDW-tp2m4scWLeJVi8IG4AW0OjrpMco3k8uVfDF25qGvQQznl1HzGLUTcvtzAXefmu9wOThpnsgzz8P5LdIsYDQFnzWtkhjIFy-EdDddfHmn07PVIzSI6oncjzw3WhMhVzVxYI-iwwiudOZg0lwMmaJOxg_bdLSDKJj2F_tV1qlaYEW3eQoPCAEsoeeGLETT8pRACY0LLDn3EoDxnUuKY9vJIHzA0IB0b1kdJ4Di61U_dLwDC6ne_hV_kiX-1YjVP-BggShAGBEZLIgn0m9sicmaNpS-nku14chbq1e2WO_momrl7VaDVXQwWSabQ7exfGzxWxmjVpqcKyNgOcDytjwjp6T-E-3JEHo3vr6vQNXMsTFkq0IFivovePjX7nBS6WKWs8VfwYS14jlRznaXdzdC-hHhPy2lFLwS64sXk9XmFIWDR1iThZhRANKz9D-8vFD-bsIH0N8XfwkM6iVg1XpCSQpScwPSq8jzXq2cfMNCu5UqGfLmq-KIbr-Mu8L_n_LaTr2Ee4RUJ3sYp7-yt38k0FN0YhuIYQi-YUfDPblpSIhKAtSlEcBEBsOWQbiKtlc2ylgrHJKjTdWCRwVzc_gxtUU11OrlS4ebJv89eKPo17G1DMgBpcPvGlM1VbL9JNWeKftLslprPqVipYko7FThdIXle31mKQ4HA3SkpMs--nVMibsXD0TfQzmQccAedwQARNj5Z53H-unXbbcYxjRa5YdYO0j9hV2cN4MDUI2oyc4eV4xktn9Q-zXwjyCoON4MOwikjhP7w6xFs0d5kFl3sMqPV9VjCb3PMFYClP3CJisNs8B0IGjOPzM7yLhoHLZzjV_UEJu37WERcF3-5Z7TzHU6JVV4RbCPlyE4VOk1x4AoM5v3ws5TLzRYP3ZF9BtX7NbfJ7_OmIwMojhH_NDexVRV-cv-PyX7JNt7wV8fU1Y0g1OV6gVkx79cOMc6mCBhH0Adhy-6vzJbcXjWyC96LUHfixlBQ4YKiwsSvAjdSNqj5shfAS0BfCR3xiRvTeCNDz5gSRX2HG_9kvbH7wb4uwI8pRwDrDYF4YOixSaB_a7x0QYrsmKsWxm40dcxVOgjF4w7tTNye0RBJXIoxsGiSwRs0fP8yBnjXeEiWkR6BYcyUfL27DUppdlsgpOaTESY_izSqpo0Mi2234tjnxqTpvfFoRY28dHTdct2srsqE41dbu8Mmi1qWekDbNuYhRUP0EE4_Ljk_JnzoACJ4aspoU9PPjTWo1f2M96Xzoyga8suZT8ZmU894UsoCdG0nANdhO8gnkRWrKXoDgdZQE5CLJmd-LPMihSLiAyHIAJ5lEMOUggPP6brBmkCCSpV3-gl5gSHW7-LsQx9OdE0SKuEpJRVpgVMARvOavlUL0Bx3qvY=",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-90bfe4b6-60a7-4a12-9a04-04f595c0e5be",
+                          "args": {
+                            "request": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview."
+                          },
+                          "name": "analyzer_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "CpMJAY89a1-H9eJrPB-yWbk4_xuYXUsVuPPdPKgpoYzEDLWGRg2TgtEyitVsbXem2x0Qrhjn3i1sePzV0W9v3w8_RBaKTKOY7DdZniCeCg9y9aUlQrvsvQ8F9J_f10_CXQgt-KKbdmOGqVKGSZaP8SBsCngjMAJXFabR42YZc_2Q1rySssGD-D1DOVcLyZB0SucN7bUmm53PcxK4XdPAm-ptBjQwYHBWkt8ExTVM7b0auuN4K5IiVHjgqNL0Pb_w_jN43rj5DRabcwmQ39Moe7t4j5JCZ4rz55IR-GtGn_fXKbdkBYFRTxPdT0_khr2jeuuv65wclb6u7w4awMq1b4Ban631Tbm19ThhnbAx5seW9wv3GoldG1UiEUUPiOyeIq4CnZiFrZ9WCyN9BRH4-_DyFj9Gyn5uYdLL7Z3CUoaZ6I0Zv7TEPSvMT6l2OezxFrLgxcb6-HO_S7b3A5gmMXiA8uH4ussNe0SzC2Wwt4q5K05uHBtGKoJZ8cwFXoka9ftQu-uTd0RQ2DqTh891YyEdJ0JKRyNnC5kDT-rrfwIneIvMm2lHzkuiM12bApReT7YySQa_iM8ZiGbzOTnUlGjYBWJVQUf9qGWLWXTO9cCvRxaDFmGVbfNstfSfETQN147U-T1XctBQDW3fCCtS7DaRAmIrERawvYX38kl7nvH2udCkueAQmrvU_YN2lJPVzTTRKQ_-qnIscUph1EzrrBC9anckV05H57DSw9RIsokUlZfwJk2yf7lnBJMdRL0mBWdpyhZ3-2qGRBUNGSIdsKvspfpeVg28DTRZ7Rj0t0D1a0y_fpRLcgaB_2jRXn3iVupOtZmD6plgizbKMOzQT3BHEGPNGUJ1rSIx85P9mbC5FdoftTGWxwUVTGXyTPdSPcLATCHRfx4o2KgcStGbtp1ss48qKIrOB3Q7W956xf1Tuofv0YZ9vxs6LIzSr16wGfIZlob1L_yaAEtPwf2Qje5A_dClHS8HcIyTVMRvmFB-L7PwnjKX5oBf2WQ8JERPJZWio_WqsRpS6zX8H8GLjtplypMRUSEI-5PrwbQOlxDWOfOh8UE7e2yAKeuHZvbJ-nBNR7cZd0J1bfYbGTIBGb-46lz32EqpLBhL8xhEq7gIQRJV21kEkE2G7--1lLcQUv1FsZYlo7a7GNYfCIjRB3qQgKgq0I57aNMuv6OTXBK5iZYQYa66hPgGie842Nm4u3-ZSCprmAq4iflRh8wQmCQWa_4CmSsKIyK1WM49CRYZs7bPEAD8Gvhh3GuhyAvAd6VNlHM5rNe722q8ZyJujvfe1kQadI3U-n6ObFSCT6heF_QkHEJyxsBZWxFn8cm-fRT7-j4BKLGRrcxJcOK2NLlOkzeDclbhu9S7GHij9bYhh7fbVt8RMcjdKew0oYC1rz75BoekS0uQoofeToFRvo-UdPsrkIgbLBXxiysTZPTv4Ikf3UFy36CNASqffwVyXATz2wSiG-WKqCD6sPnslsefS0k1fPmAXe1dv8kS_o3mqfSlfyjjyQN7vAz_nkJW22qJneRGuFV6UseLG0kEN-4YDhp2uA==",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-90bfe4b6-60a7-4a12-9a04-04f595c0e5be",
+                          "name": "analyzer_agent",
+                          "response": {
+                            "result": "Of course. I have analyzed both your resume and the job description. Here is a summary of my findings.\n\n===ANALYSIS_COMPLETE===\n\n**JD Key Requirements (technical):**\n- **Model Development:** ML/DL models for time-series forecasting, prediction, anomaly detection, and causal inference.\n- **Data Pipelines:** Creation of robust pipelines for large-scale time-series data (collection, preprocessing, feature engineering, labeling).\n- **Scalable Systems:** Architect and implement scalable AI/ML infrastructure.\n- **MLOps:** CI/CD and monitoring for production deployment.\n\n**Resume Extracted Skills:**\n- **Time-Series Forecasting:** Extensive experience mentioned with models like ARIMA, SARIMA, Prophet, LSTM, XGBoost for revenue prediction and demand forecasting.\n- **Predictive Modeling:** Strong background in developing predictive models for loan default, customer churn, and risk scoring.\n- **Anomaly Detection:** Experience in fraud detection, which is a form of anomaly detection.\n- **Data Pipelines:** Proficient in building and managing data pipelines on AWS, Azure, and Databricks using tools like Spark, Airflow, and Azure Data Factory.\n- **MLOps:** Hands-on experience with MLOps pipelines using Jenkins for CI/CD and tools like CloudWatch, Splunk, and Datadog for monitoring.\n\n**Gaps & Improvement Areas:**\n- **Causal Inference:** The job description explicitly lists \"causal inference\" as a required skill. Your resume shows extensive experience in predictive modeling and forecasting, but does not specifically mention causal inference techniques or projects. This appears to be the primary gap between your experience and the job requirements."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-d87dea60-4992-4ba0-a870-f8f766c183d3",
+                          "args": {
+                            "request": "Here is the analysis from the analyzer agent: \n\n**JD Key Requirements (technical):**\n- **Model Development:** ML/DL models for time-series forecasting, prediction, anomaly detection, and causal inference.\n- **Data Pipelines:** Creation of robust pipelines for large-scale time-series data (collection, preprocessing, feature engineering, labeling).\n- **Scalable Systems:** Architect and implement scalable AI/ML infrastructure.\n- **MLOps:** CI/CD and monitoring for production deployment.\n\n**Resume Extracted Skills:**\n- **Time-Series Forecasting:** Extensive experience mentioned with models like ARIMA, SARIMA, Prophet, LSTM, XGBoost for revenue prediction and demand forecasting.\n- **Predictive Modeling:** Strong background in developing predictive models for loan default, customer churn, and risk scoring.\n- **Anomaly Detection:** Experience in fraud detection, which is a form of anomaly detection.\n- **Data Pipelines:** Proficient in building and managing data pipelines on AWS, Azure, and Databricks using tools like Spark, Airflow, and Azure Data Factory.\n- **MLOps:** Hands-on experience with MLOps pipelines using Jenkins for CI/CD and tools like CloudWatch, Splunk, and Datadog for monitoring.\n\n**Gaps & Improvement Areas:**\n- **Causal Inference:** The job description explicitly lists \"causal inference\" as a required skill. Your resume shows extensive experience in predictive modeling and forecasting, but does not specifically mention causal inference techniques or projects. This appears to be the primary gap between your experience and the job requirements.\n\nPlease start the interview now."
+                          },
+                          "name": "interviewer_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "CvwKAY89a18AUjPAPG90oDCovgn5vktOQMTPT7EFxXbTA-srhEF3EKskZ-3lfqtQz6NlIrU2CPwwtbZAg81-PzIRwQRia8vXp7uUqWbBWJXnuXL6iid0lLQ6MpUYslPt-1qmVrdNsUed0zVvrH2YaJpNBCGPXVJXisiRTAAUahYZr9OM9rHsqPLLwZ8kRpOEnc9qaUtq4hRSMXgbX7uCFah_GC9pdXAAS1PzyoCu2ePos9oDDvGn01ugIUptmM_DTIuZjdfKLeU-8VsZfPjvut3jaa1Ig8dKFLaKt2xGaXzHI5YvFiV-7Wsh8hB33kg-bNlQXWwC1oUnuf7x8ULkvt_fEJ2SRIGl79fsxI61n7ZZYUsgi7j-TofK_Xv1SeTMM7xDNEK8Yh5rD89sPmqoTuJEJBgHGnZKfncXmDUN2QbsgkIRbakAL1cKkn4Vt41JD-3cKEZfQ4Rxm9cJh7BSgD33LC_6pNduMfiC6cmis6BViJr_b0QQm0PFWS_f-fh2UgSGuGgALFPJswktC1JHpdD4OhM3uwnbH0EmN59Nuf6RtYekG8qRhIKGW8QTuFrc6OTg8yiqnkpvrnMihrz9kgFSFe8-kDGFyKCpF6YOHUIVDxiCC5RlgRtN51pp7OP3CC_GL4-LX_QTxYeYhO-8GZaXarbJCg57V_lgnWz5ElQcNv-fvYeiK76WKdKvAOKA2mNgXHL5GGZSfyGGsiHs60MX4lsSlnJgcxHG6qsKfN1Q6CTX99Q2C0B6csq2x-uG4amopcY82L1k-rIVA974LhD2Zwxxj1h4LLy1YXcE_PwR6MfrTgLB1VPo2v4BfKyApFV2bUckGJKdGnIIYFmd9tEUdSiBJD9okwh7Q2wyKQxnEJAZxtyHdd_sdlMT-ZMuiLttHnUM57AslyGCdDi8wWjFyUB3xx3Hf_wNXI60ODE5nAK44muf4uyMsogM9Np-xnXxkWZC-i9_gvfGTD5UxTu1nikXv5_JTytYwQDAvIO6dxO1Cxr22KyDai15cTsqHHa6QdZFq5R0A_iXJyojhfpDguU94ltnNKTMzNjqykQcP68yOpvw2EF60F6Fy9P6MWJy4LjJe3FQSN_eI_3bhP6iLB5f5ZzoQMva2DF6c_VumvbfG69YDdZWZJHDY5_3317Ti7y8eT_hsPCffKfqT1QH4N23YF-Af0BQuP17gy-5oER1fCgrfyGYGKD2FqOTNuwo9s2pYbDjiBdR_KImOdJr235gnVpxWmcfLhIK5mS7HaKaYISEWuFGBaPfmQYX6hHdnarmPKeYMI59iy8Lwb4CERnRmf9P8f49z-UQI-RIbTZ7m-J9-k-lyE4QXJ6MBrTyxFSLLMaTIKQzv52L42q9ERxPns8egH32OsaTmIEQYDBVfP3qta7OjIxeS8wS-sQhJYxMxCBL0gPrftyH82JiEjzwM4kKen43m0_cbYO3yyATrMYc5TrHzGqykMsMzUdxouZEIwyplGDcmbHkAYBxiv2XhJW4zc6R0bu2D6S66TkKK3_NYI1rdabXGj2uGvOl2C2cI3vIVabiS8QJFvfUXjufEb9HHlF8Jw_0dbheECwA6T93n5uetsXJWVK7lRaSoZHRWYFJDp6Yc6LD7tREzvOOSjzu36nbX_4LKZJgLj92mhR83WdpGnZTk7_AVdv0gI5pfz9KdPhIxK3L8pfsSLAE580jiWiCs-3fGaEuOqLIW1QbR_6wApHAv5yawF9HmlRuxmbT72m99fsFOmRcsM3d6s6dHf5oAGJeXf3ONS7cjG5TUg56ylbLHaSSh_y_hF3gY9EB7Qowa8y27cKFhyuPmY2qah6eLBaX9rBaPGveJmv_PpJgtxEhoH5JRSDgMobMOYaQc65-ucG6",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-d87dea60-4992-4ba0-a870-f8f766c183d3",
+                          "name": "interviewer_agent",
+                          "response": {
+                            "result": "Hello, and thank you for your time today. I've reviewed the analysis of your resume against our job description. Based on that, I'd like to ask you a few questions to understand your experience better.\n\nWe'll start with five questions, and then we can see if more are needed.\n\nMy first question is about an area the analysis highlighted as a potential gap. The job requires experience with causal inference. Could you describe a situation where you needed to determine the causal impact of an action or intervention, as opposed to just forecasting an outcome? For instance, measuring the true effect of a marketing campaign on sales. How would you approach this, and what are the key assumptions and limitations of your proposed method?"
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1769966459.502453,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "router_agent": {
+                  "name": "router_agent",
+                  "instructions": "\nYou are the main Interview Preparation Coordinator (router).\n\nStrict workflow you must follow:\n1. If the user provides resume and/or job description (files or paths) → immediately call analyzer_agent\n2. After analyzer finishes (look for ===ANALYSIS_COMPLETE=== in its output), switch to interviewer_agent\n3. After interviewer finishes (===INTERVIEW_COMPLETE===), call validation_agent\n4. After validation finishes (===VALIDATION_COMPLETE===), show the final validation result to the user\n5. Tell the User ===INTERVIEW SIMULATION COMPLETE===\n\nRules:\n- Ask politely for resume & JD if not provided yet\n- Do NOT analyze documents, ask questions or score answers yourself — delegate to sub-agents\n- Use the tools below to call sub-agents\n- Be professional, patient and encouraging\n- If user says \"start\", \"analyze\", \"interview\", \"feedback\" → act accordingly\n\nYou have access to these sub-agents as tools:\n- analyzer_agent\n- interviewer_agent\n- validation_agent\n\n\nYou are an agent. Your internal name is \"router_agent\". The description about you is \"You are a router agent for an interview simulator workflow. You are given a user resume and job description and need to route it to the appropriate  series of expert subagents to help the user prepare for the interview.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "",
+                          "name": "analyzer_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "request": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "request"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "",
+                          "name": "interviewer_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "request": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "request"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "",
+                          "name": "validation_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "request": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "request"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_maps": null,
+                      "google_search": null,
+                      "google_search_retrieval": null,
+                      "url_context": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Thank you for your patience. The analysis of your resume and the job description is complete. Based on this analysis, we will now begin the mock interview.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [
+                {
+                  "id": null,
+                  "args": {
+                    "file_path": "C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx"
+                  },
+                  "name": "parse_document_tool",
+                  "partial_args": null,
+                  "will_continue": null
+                },
+                {
+                  "id": null,
+                  "args": {
+                    "file_path": "C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx"
+                  },
+                  "name": "parse_document_tool",
+                  "partial_args": null,
+                  "will_continue": null
+                }
+              ],
+              "tool_responses": [],
+              "intermediate_responses": []
+            },
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "judge_model_options": null,
+              "criterion": {
+                "threshold": 1.0,
+                "match_type": "ANY_ORDER"
+              },
+              "score": 0.0,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.6,
+              "judge_model_options": null,
+              "criterion": {
+                "threshold": 0.6
+              },
+              "score": 0.25974025974025977,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.7,
+              "judge_model_options": null,
+              "criterion": {
+                "threshold": 0.7,
+                "judge_model_options": {
+                  "judge_model": "gemini-2.5-flash",
+                  "num_samples": 3
+                }
+              },
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___1c504308-146e-4fec-997f-4899fd418b91",
+      "session_details": null,
+      "user_id": "test-user"
+    }
+  ],
+  "creation_timestamp": 1769966552.0902545
+}

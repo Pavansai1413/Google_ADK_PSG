@@ -1,0 +1,98 @@
+{
+    "eval_set_id": "interview_simulator_eval_set_v1",
+    "name": "Interview Simulator Eval Set",
+    "description": "Basic eval cases for Interview Simulator agent",
+    "eval_cases": [
+        {
+            "eval_id": "case_1_greeting",
+            "conversation": [
+                {
+                    "invocation_id": "inv1",
+                    "user_content": {
+                        "parts": [
+                            {
+                                "text": "Hi"
+                            }
+                        ],
+                        "role": "user"
+                    },
+                    "final_response": {
+                        "parts": [
+                            {
+                                "text": "Hello! I'm your Interview Preparation Coordinator. To help you prepare for your interview, please provide me with your resume and the job description for the role you're targeting. Once you provide the documents, we can begin the simulation."
+                            }
+                        ],
+                        "role": "model"
+                    },
+                    "intermediate_data": {
+                        "tool_uses": [],
+                        "intermediate_responses": []
+                    }
+                }
+            ],
+            "session_input": {
+                "app_name": "interview-simulator",
+                "user_id": "test-user",
+                "state": {}
+            }
+        },
+        {
+            "eval_id": "case_2_provide_files",
+            "conversation": [
+                {
+                    "invocation_id": "inv1",
+                    "user_content": {
+                        "parts": [
+                            {
+                                "text": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview."
+                            }
+                        ],
+                        "role": "user"
+                    },
+                    "final_response": {
+                        "parts": [
+                            {
+                                "text": "Thank you for your patience. The analysis of your resume and the job description is complete. Based on this analysis, we will now begin the mock interview."
+                            }
+                        ],
+                        "role": "model"
+                    },
+                    "intermediate_data": {
+                        "tool_uses": [
+                            {
+                                "name": "parse_document_tool",
+                                "args": {
+                                    "file_path": "C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx"
+                                }
+                            },
+                            {
+                                "name": "parse_document_tool",
+                                "args": {
+                                    "file_path": "C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx"
+                                }
+                            },
+                            {
+                                "name": "analyzer_agent",
+                                "args": {
+                                    "request": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview."
+                                }
+                            },
+                            {
+                                "name": "interviewer_agent",
+                                "args": {
+                                    "request": "Start the interview."
+                                }
+                            }
+                        ],
+                        "intermediate_responses": []
+                    }
+                }
+            ],
+            "session_input": {
+                "app_name": "interview-simulator",
+                "user_id": "test-user",
+                "state": {}
+            }
+        }
+    ]
+}

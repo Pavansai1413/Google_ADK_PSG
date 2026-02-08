@@ -1,0 +1,30 @@
+# Exclude virtual env
+myenv/
+
+# Exclude local ADK artifacts/cache
+.adk/
+.adk/**
+
+# Exclude temp files
+temp_*
+
+# Exclude Git and config files
+.git/
+.gitignore
+
+# Exclude images folder (if not needed)
+images/
+
+# Exclude deployment folder (if not needed in container)
+deployment/
+
+# Exclude README if not needed
+README.md
+
+# Exclude any other junk
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.db  # local session.db

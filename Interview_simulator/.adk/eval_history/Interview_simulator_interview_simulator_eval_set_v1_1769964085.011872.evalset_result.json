@@ -1,0 +1,652 @@
+{
+  "eval_set_result_id": "Interview_simulator_interview_simulator_eval_set_v1_1769964085.011872",
+  "eval_set_result_name": "Interview_simulator_interview_simulator_eval_set_v1_1769964085.011872",
+  "eval_set_id": "interview_simulator_eval_set_v1",
+  "eval_case_results": [
+    {
+      "eval_set_file": "interview_simulator_eval_set_v1",
+      "eval_set_id": "interview_simulator_eval_set_v1",
+      "eval_id": "case_2_provide_files",
+      "final_eval_status": 2,
+      "eval_metric_results": null,
+      "overall_eval_metric_results": [
+        {
+          "metric_name": "tool_trajectory_avg_score",
+          "threshold": 1.0,
+          "judge_model_options": null,
+          "criterion": {
+            "threshold": 1.0,
+            "match_type": "ANY_ORDER"
+          },
+          "score": 0.0,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "response_match_score",
+          "threshold": 0.6,
+          "judge_model_options": null,
+          "criterion": {
+            "threshold": 0.6
+          },
+          "score": 0.2992125984251969,
+          "eval_status": 2,
+          "details": {
+            "rubric_scores": null
+          }
+        },
+        {
+          "metric_name": "final_response_match_v2",
+          "threshold": 0.7,
+          "judge_model_options": null,
+          "criterion": {
+            "threshold": 0.7,
+            "judge_model_options": {
+              "judge_model": "gemini-2.5-flash",
+              "num_samples": 3
+            }
+          },
+          "score": 1.0,
+          "eval_status": 1,
+          "details": {
+            "rubric_scores": null
+          }
+        }
+      ],
+      "eval_metric_result_per_invocation": [
+        {
+          "actual_invocation": {
+            "invocation_id": "e-ad8501cd-59a6-4b1d-bb47-adf206c24e60",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Hello, and thank you for your time today. I've reviewed the analysis of your resume against our job description, and I'd like to start by diving into a few areas.\n\nLet's begin with a scenario. Imagine our company has just launched a new marketing campaign. Shortly after, we observe a significant increase in sales. Your background is strong in predictive modeling, which is great for forecasting, but it doesn't automatically tell us if the campaign *caused* this sales lift.\n\nHow would you approach determining the true causal impact of this marketing campaign on our sales figures?",
+                  "thought": null,
+                  "thought_signature": "CowXAY89a1_oOmMc1jeAc2FLkU53Mh0wSFuOVCk51mp2Q9zLCNedSZxMZ9pCMhuBfTZUOOJDHNA52ZpcZ3_oYaOrNs9kFf-_KOwWqbmOoYf_Q-5XFU6N85g51vSFSL4_WcfyePTd18aASj4LOoU0GbwNkUdFd2mV0v7RhjAPPD3uwvA42OEu77Rs2J2l7g4bSGGcfK_wyyNzn9XmJLXC1KDSdHa_2CxCLfh0cQYBNkxXnFHavYYOONG_lUFs5VBDy7PCge37MGJyCip-02TDei59k63IrWskpGr6tuTJMj-9s_faZVCmR00rYm34zWkYSQHmxqALdW-5xtyLtwRkLzZlPgBF8W79TR-4iRjPY3S9kvZpyun9vFSr_k30JHJUgWiO_2_nnqslvWWU7YM-tPoQf4QXMMY2jhX212FmdXRfS-z2s6lLCIokCDudtKOlsRHhPcPAFiLngx8JKu_ELEPdUPwdwaMG3bGB-WQVkes8hL3RaPl9dHJaY3v9qPPzl-eccSzBj4jeEK1L8McAYrUdMsvvL9eHfIQwXF6NU4u-Uz9uJuHyqmg0LeQ2Vt4gUBGKtgWpuXNIJ-B1nNykRUw7KnKTRlta62UxmpAEv6Gm-Y84JBMQzHYNDwOEeyri_vd2xsv2Wv244sbAKe6Xv6ZW7f_FLFqAusux0nhBsuxyw9YB01auwYmc_Uzu--XR3YRCLTf_UekIHGIITGwpmIMzz65H8Ytx1pkHG8FC3Xvq6QGdsTykfjWbFfMFDFuQ6Jb_lEFxwC5Jqyvpfdvb73jJ07wMVMinRmNIL0WBMKo84OjH5ToC7s2VW6_51BhCkwLZ40kKl5eoG1C4AkwpdYfCuwDooVIklpbqeS3U2i-4pJIcw7eh23THQ4RNBw_BBRBISvu7FpTcMNjyDjhlpdTqO2aJdSBvk40FdE4rph9P3xWIGzLM52s_0o7nktF5IVWJ2ZadGDIeCkXPDZzPIpyIX99Oc4w-EDOIFzp6wdk2m23D9ij_CrroZu0PtCGV6u_6smwnf0mNNaI8Dy7i3s9nX8f_oYrQjqi4k1QueyDwLLHePmsMjQwGzFQkVoWluRfMuwIJLYyscQteWqRB1u8xiC-Zr2DX0IhN6HT37mmU0fGBqVsPzB01DLRDzNMlBZGyCRlwtSSvBk9Kxba94_ipuMQCsYv_-DvgoxyeVXM9cePItTT7_76LD3tMzRVFwOtDgThk-XFM_ZrKhW6XLLm1PUb_oN18uLDytCIY71aIyjfPzDJqtDRaeR77W6AnOaF7cOK5H--zzq8nU1sLG8D-hyyuMWVD7gh3f25vnm5-uq9qVSnGxx24jujmdN2FevTY3gyuA3V9fk7PsHcHJNOOD3cJqQU8VgJckJwdw3TTzIAlssMA0tMh_GwDc7x7M3Qmfy1Ynmjw2Iveaetqe463zuvHAd_pgCaWwMyJswkfw3eVV0tW0f66AbAER7cvK2pJ8YMYn3xAF3ETdzA6_7M7IR1iE8KiMD9kOAVYKfL49MZbRZXk2oYZPKB6piv2do8hC1BqrtkVdQkI1jVXX-TZ608pgZaAIwYARytGk1xf7-vpLdwtdSPMhTL1P2z355B-P0_QQFRDnWzDSv-LblfvWAjdgYnTlkUtME9ETaVSkuEqwmgX6nXS-G1Et1PhbkJ9p3CcXhaXl5JG9K7bpRLxDpUcE63LOV2qfoZNASeqR8mKc5ovzPNplnTfzNfDaCciQlZa0pkbevsVcSpCNc2FzyjyWuxeDuXHRcxsm7Z9Dx2puxoukkbluCoIuaQFBfSYacvT8qhh4HS1qsxtoZrr_2Gi2dhzxZrEcEeAylc0LTmXX8r2oi87aRLx4V4q9KiAeTkeODT7MfTRcMW2pY6QDkkXwImgN1_qwy_tQxhyeifesaBzXLbNdqniTgYj29ltcZoxQaxoAz37k8IUMlnfeC3xFjH1g6ZjhLvoy2DVAPPPiYtXMae3H-JOXKEEnjqgN4ZXPT82zkBlBZzIqf4BkafPziy5EYAdA3ML3DSw3LVL-GsBxERD_U5nvVuBG5MavMkgYCnLSP4YWW_HEIRixI8j_Mzhq-mV8jMo6PHaaSloEYsna5yugFVOOl1V_y1W2jqGMCbilEn3lvwrvY1aw3_uzDqkHoJ0FrICQwjv4FISstfe9rlfb16tZc5UnbGX5as6b6QqSGfiHBURyfNzHV-ZbjdgHNS1QM-kJwR_d-rT_YrTlR_WtJf27BtACw9o8yUZjO9fKhk_x40WcyXSDqpIrbgnSFzlD2NLnBRL8VCMyOuVbCzAplYCG6pAQGGCRDL8HeOEqWmFwm2s0qM0WLCZ49VoC6rjzrJwzb0IfyOSoFDGT8te1nbMPgykC-OqcTboccRmoJJEhevffeoeKnKLDxR8NTsbHyv4_nmSX3ELxH_jcizUxupB1G_yzhcPTHWhYZkQvxc9wdqfQttfbTTzzoL2nD7wkzBJHfd6zk8F_q3v0RFHIx9HJZnD7g8gq3UAQdCwUYwZhSYbAP7LGiMggtboUn77Yj_R3oPAudGhN7_SIX98qF6JDnpJFwYaoY-_ZAR3RyxgKkrVgM-NoeVwFO9nWqA7ofPguNYnQLNbBbjp39o_cyB0J2wGX54C-CBkDpeTyh7acBoZqMEAEAEvMDUWhqQ8Ecv8e-ILZ3Ki7IvjOlZkaUTb50HqY0AxbT5_nxavOtTEzBSCZfA8DwKp4u5tUlQPHbx6myqTyi9MeYiSnDapZR1vjDsLRgI_V0w_G3pBSq6o7-BVN15DWH_TMkhx5jUdnPiqKPuVIWEpjClShwMJDrT5clcbct3itbmedMrfBKWwrK7zh12ndMC0iTMeXPHmNtC944e6H-jVmj7DAGDX_k_8DqSp3ewDxacCy8hxFpcBIqzB_UEL6HjWG7Ue0PZ5NbvqVWXhmQ1qiPk9W6C62GgGBXp3MdFNhnAY7UfahvAt_TJA5WiypYzmIUCx9pzZPpFmusPDd6MIlCzm8uskv3G4bO7svkDt7xr6DrVqD3hkcLom4pGX7Wb2fPCBGrKu0BGR8bI8nFNzl_cmNpkwyB0I7O3I-sAlSGLEty2VWWbuR7hJkJLCEV_3CCOk1e8Lrbqre5jW5KYUYF3Wn4NMgFba65I_8Km-WWu4UpJUOOixBZYV4a9kcrjNe9MLNPkyAApwSHEySklsnClFkWXiDFZvhA__nSKHOYoUTbJToimW6maigp0OLAuTHA2AyqWLVS3_KVkKiMkl_jjbAwgSQ_UmRpOyon7oXxgiWo6mk8WBosUd6-y5m8Srmxc2JhuvMVwJl4JJcTsujCysGDtZRWJ0-ZWpra5go7XZTOtkCrurONimuxXrY0phCDy4xb4nDn8b0O0i07uSbSjmGnIW57eXYg00yyKbWAfYFvLK3RokqowFVbHkC2879QenRi3byZY6JFV43GaS06RcCRYEjDr8CZxRufKfDKB4AR7xTl5jgqoXx-LcAthWpIJr1tNyxAzg7JTEdtHDNMqUTi3_zuDSQiPWQC-NOUqxsUWqkZyglL7tuL1HwlRPDfYLct-dLMSDd_F5eQpzr-wuoL4hOnjxlm-JtXeFphKI4yux0riGKGgopttVWd3DdP4jM0lxn2rz46QqGDRWwp7PjMN61ITKEqvI3sb3ZdM8weKpSNunGsgm9JVv_oJAAGD8-WiRhERF6F_UvyW-NSMLy83s0QTsCmJoPPTa3MNOWZnsnfwG5npI_obZxb3B0HEWxdiEX9M_zxO9rduBlLGlSxuHDicXvZzyllFpJD-_Jwbg5aGCxEf8Tm6VHm3iN3xDfJjpdjL3tsB3zAGKGcYCaVg9kgwqYRt_EWjlsbEBdNaRiXYNiJsN8AQiv2Ah-y62lY7ZT8w_vVSXl6FqSZgQ7NfgQA0HqhwQceFJdmqdaumdogkpcrChlhipM0g8k0vlFTdZpd76ig==",
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "invocation_events": [
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-2775ab71-2012-4033-80f2-9289a459f02c",
+                          "args": {
+                            "request": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview."
+                          },
+                          "name": "analyzer_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": "CvkJAY89a1-9BSMGcEVi_YLE4fWMwUSCSMlqt0Ma810cS1uiN8t4Aig4z80S6cGo0vTT_ncarAuHCdeoTrQO_F652uXuKh5L4lwBctQGsJY9Za9OJ8GNkc5omA8wFDm2av8TiWya0hsNaN2o4Qp_2nx0Q8QAW2OxlzrwH5vfpnveQy2eSrE8kiNFJmfYd7xoPJjjhzPp-gVyBrfLeJ1IHvE3uOgAFUlQsUm3ErpKCVbosEkvQZz6yxe3haNSv3O8Zabc7c_jg08IT0nR1tqBeO63OqslswsiD7pvEn8dwb_JRbGjPn0YzsDQCCl-UHRwmEIr2Z0s8UOBkUngsYHHL1gfgD06bUTwbcO9f9QQPaJoAWmgyeM4E2yyi-SqFbhA_8lt2wzo-N8Gac-pZ5YyTRZRLYYXxh8fN488KRVdguJ8VbcD5cKep-MwLeg9HQnP05cEH0AoRNZz-DTg6Mf7Zg8akuASrZ_5F_niAhxvHPeqKuN4xNPEnPdUrEkNlRKxdfKGR6LMUDTAhmW--EiZC_d0QboKqKmJRhV7k8c5O84257Krlf-Wl4sCa6xksyNj1FwqWQ7iLfzv-3ApFobCN1NU-P-NzcGtSGNUrpRsGOP5PZOfU2fxMMLuRHIM41cgOz4FU1gDyxj2UBy2YQmz0b5r9CoOIJ8NWEg7ZgqqBvNys6mt8htnfzyaMvfaYdYhXwCVeeZ0ydIvMDKqAm3xvira1HIxKZdEN_oYyXbzkhlzkQ9qCzpkF7_C3vAGAK6DyaHUBRI1Kl3zUWHp_Ur1Ttwh3cBvnNXk8XYBJeW6UpWwQIwINht4pcEdTnDfm6hkexiDGHYm6yAl4BkPHc4vD0x3o62eAoxuh0GWEzVezpqyq13hC0EU1C8wChdhGuTYwXp-C4XUV-XGlxnRvLyEghUYK6MVDJJ9IoIGAwvyafIbXqAXosMFOPi9jv5KKNpWIZZXxzvukf0Iber6aQnyJwxdXz0UrM-hPQfvkDkPDCIaDSGN-FlJXK2155zzbZICl4rf6hKkwSnBxMNdi-dMmtNLocYuKqWGLZCVfv8ui2XdcRIskIAcaVgVMRfsq8QvVHONR3KGeE_phDWT4QYDaLWXndzsAKOD0VIdcKQwl7tDAjTezysve1E-FEl_RgauEJUinMRHCclTDEctUjNh6T2GGBt2hR1gfqzD0B0-BLUhjtMVeMun7Proeuey77SkNO4WZvaxSqAhRQqM-exBtU0HeBZe20Jf3CsXUBE2eQjIeBYph5eAP0arSaVrsEWAFJoo0lHsgnGvxFYArxL2N3ll_BBl3DyPkl1Pl8sqMAv41yyoKf80FSzaQ08P2XAei30tR3Ql2xRY5XSuVHS23ZgiUuCXvZgsQR0MbiVJOgo8A-6xLGZcFXMDtLUn49BVOaosQk572wjqXJJElpRY7tJdmdkR4KO4avYtwaccYLTvFm-tjSs709RSpJDSf4j3gCUR2f2gc2L28NtWJwHddKKDmFAolbjKrhBb3Zdcv9oFqcofuTBIMKJSySTWf9O6VY-bzYdCr5FXWcKX_hTyiWIGlaCEhFyFCfZG6UFofsAfeG-73u9OCRoqYEIxSbfI-Bg6hWAOrbJYiLtuzGDAkb2dsXttSQsmFVUbwZeneD2wAgsFyVpRLWpUEPoK7P-OEPItjvzxzEfqzP_fBZii07drGW9LQPbo-FrkHQoiAY89a1_iWr-cIk8X_9t_Udp4QUZkxQA2megHtKZMo7JNnw==",
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-2775ab71-2012-4033-80f2-9289a459f02c",
+                          "name": "analyzer_agent",
+                          "response": {
+                            "result": "Hello! I have received your resume and the job description. I will now analyze both documents to identify how your skills and experience align with the role. This will take a few moments.\n\nPlease wait while I process the documents.\n\n===ANALYSIS_COMPLETE===\n\n**JD Key Requirements (technical):**\n- **ML/DL Development:** Design, build, train, and optimize models for time-series forecasting, prediction, anomaly detection, and causal inference.\n- **Data Pipelines:** Create robust pipelines for collection, preprocessing, feature engineering, and labeling of large-scale time-series data.\n- **Scalable Systems & MLOps:** Architect and implement scalable AI/ML infrastructure and MLOps pipelines, including CI/CD and monitoring.\n- **Collaboration:** Work effectively with data engineers, software developers, and domain experts.\n\n**Resume Extracted Skills:**\n- **Time Series:** ARIMA, SARIMA, Prophet, LSTM, Time Series Forecasting for revenue, cash flow, and demand prediction.\n- **Predictive Modeling:** Extensive experience with predictive models for loan default, customer churn, and fraud detection using XGBoost, Random Forest, Logistic Regression.\n- **Data Pipelines:** Expertise in building end-to-end ETL/data pipelines using AWS (Glue, Step Functions, S3), Azure (Data Factory), Databricks, Spark, and Airflow for large-scale data processing.\n- **MLOps & Infrastructure:** Proficient in designing and implementing MLOps pipelines with Jenkins for CI/CD, deploying on cloud infrastructure (AWS, Azure), containerization with Kubernetes (AKS), and monitoring with CloudWatch, Splunk, and Datadog.\n- **Languages & Frameworks:** Python, Java, SQL, Scala, TensorFlow, PyTorch, Keras, scikit-learn, LangChain, Spark.\n- **Cloud Platforms:** Deep experience with AWS (SageMaker, Bedrock, Lambda, etc.) and Azure.\n\n**Gaps & Improvement Areas:**\n- **Causal Inference:** The job description specifically mentions \"causal inference\" as a required skill. Your resume shows strong experience in predictive modeling, A/B testing, and statistical analysis to validate hypotheses, which are related, but it does not explicitly list \"causal inference\" methodologies or projects. This is the primary gap identified."
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                },
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": "Thank you for your patience. I've completed the analysis of your resume and the job description. I am now ready to start the mock interview.",
+                        "thought": null,
+                        "thought_signature": "Cuq9AQGPPWtfc1udf6z9vk73ZxEvC-jo0d7OP8nYSLpcFLqKXemV6LyLxULG-B-92f8cz61lrLR1noYsixumPUhPU33a5RcXGGoSFF2soLiNUPn07JGTl7XYNKMo7_pv7bcjtiDz9UwM8bcstvslIxMgIeJ2RAZgxcUJUkkxPkPRX6qDwu869cnFDd3s7ISReDAH4_4aSyo1HBTZTRzL9Mvrxiy3NIqjJQk1_cYGdI8eshZ92cwqaL6sDEFgbFDUme4Be3Ztv5x9M-7wdZaK49CIFeYcoMMXvn49kFlC4v3Rj2qUF3nG_6I2jgkN0Lphm39TfFnDclDgbpixl5BOx0p7iu5kHXow-i88KcCCU0_H6Uh8VtSSbs5YQ_DXExMrMST34pS3EGEecq9R0ZmG0aC18wdDAvI8in6BtArt7LkvjzPBSA0nizAOKFkffv-hq2Qo-RD7z5qdS2-upHKuC_SDSduL-jhXWm-s1QwQCFifc6MsqRIc6lCM6Iq1fcb9ZDX9utaUI1EIB3ajGm3cJo9OWk3PjauPxrvzas1zhyCNyG4ELQ94ib7O0187r5l9lVryYLrb0Cg4X0magXTPBlL0YiFYXRAi0KX4_YZ2IqBw971uu43nl0hVQIITUKY_RFvvVAoAgTa8Hftfdz0wl7ahG8Olo9isTqxSqMSF8R-NKDLq19MLdQkcT_Db2e2LanwXwkXS9uOiRgf0nEHIZxcBs533hqaFEPpSMV6BVXK89F7pEssXk_65QBPDMO0jto9xfDEH-r841I5GBYxpfan41kcxWy4uiYp06nDszJTLHkuPx1azS064cBU1YeWq88aeSOyJ-Qr6yx4xoWOAcO3OwumrDb4dpUf1Reehyr6rqX73cnQ6JRPq-BG-AUl0TLPYLibsIGgrxHuQ68Etg8vg0371CeYQH_OuAEISO7j5eO3iRLhkYfUyOW6Yy4eNgVGqQx9zsaQudF4TGHWXQVxG1uTI8AzbdQ3Jlau62zqIif0h4aqmdmwtfBGX5HvmBYjIM16INGk-VltevHln01TPeHdWi5kZh6zS3Cp7bJjp_kGFaphT7sUS6l6fEFVLsGEHMvWp6OhSKYXdqLYTbVv6kaps32PTJiNvhlANiN0eIzwkK-rQiNksHl0O5xaPz8gq08Zo1VHcZWCiBnbrO-GWQGbnmOzLPQrHl5tYFFB2Hs08d6e4etL4Fla9jAOxEfCxDj_97dwVs17jMzbD66f5OqbPS7MNKRlxYxn7QqtlyVR1Ul2SqvQaOzaLqwxNyMxQi_IbmsziGJetZG-5C5kpku549TsjeViNdVy-fE6ylzkE5TDgGZlDt8RhG42QMnYlWPJHaNlJ67JbrakvrtNQm6M7E7Xc-SlBGN4YRW-ebwaS43nY9YAiKCVUBytVmaVnCS62VYUBKSBldCsKyyVngNaWRGwDBlbSmKLoBGngSbuGXyz6BS36zu4W-be8dbOPE5WVbNHp0KDH2LsOV7tDt6wq3pm-gk2LgbIxYCPhUMyj6kb5xwTSM7Na4aeGeCPBDKIn_GnteQBZTthL56CRLV18Mzw7mvgXwdoQyEDfn2x6q-wA6k8kRworBMWYg0VljqLhAkoal20uXatmxmC4dVKK_f8AEx8ZDL6v_vVjkoz8TDbSWreRA9JycCURg3XAsgnHhySt-Ubr1JMLrVI_lqc4pavSSQU1nuiqe0RmgbwJQWfxyhXAJq4iN826aDATj-wnbn7KsaAoRFFZdjsgklYHexjxWFU6ev6IPYfPBVG848LuO0wb23oaSQStN0NKFpvDh_4oJHsdrNYd3yJ03vu_RCTKVOnZRXHBD4t9yhhLRdGVVIJQvrVSOY_aNXgQ1_zgGwOqGVU9vkqs7BZCC3_gnUv3c7jwSM-3ApTjCkcPE7VSN7Yn519lOA3R1HekWk3Z4Wd7C8ulQAAB1IpzyH-iKO5q4FtFEAihubOPWxgewgGs6fP173s3NWbyYSMnZsGDfKzlfx4t4URMdH0MZ-7Wcuc3od7vkpaEa4woauZDY_4TfDeJNDwCCnXTRGglRte2Lv09zRViGBipR3Al_2e2RnxIO3jxLkYd4DSiTtGP9wcnHV2tHDtdL_aPzp4EzdQ3lWZLTHguRIfKZa5NtdNyeKTrG9IodlGxFUrq7Qadb4DMT-t6tFl2LZZ0JqraFFphVu_7Zs-HHbxEKyl831uIT8nZrCMk0hVW5PVXX0Wv7lcJZxa57CkLmdUv2U1JVHhwxqdEZeVJKUTYgySPdOLNf5YCsJiAlJ8yUUiR42BLVKb2_Wo_xlf5EWfATXYw0Ai2nqFHpaVod2uVjSNnCKFYFoL0V07DKt9CmqWFps-YsBF3MgQn3LrMD8fHEQCRYUnrlzBJXBAURrHC5AlGcE3fX1jKF9MuF0LqQ2pJu0GZ4vWFDYZu4D8iNlUghxzWZH3aiLk9EpnzY0lAjrzI3pBWPDbKRK5PDKGAsIoreQzoQLrl-Eb5ZnOTuj4IfHXZ4k6sx_iT8iLePP5GozkBaxy8RsX26DtIOoClmZPNyU2Di_cUCkMjScc7y5K0I1P1Lx9PE_2HAeIhXriVKasGXGImTr3rU0RhPWm-QfhINdxm6VSvXRcTHL3t1gTHIUn-BntQDFy-LMZyYY48PFzpngcMh37yQBwCQv4Ps1PxsRn7vSTOQVWXN5vQkOjzAr6UtTscNyO8b6xdV0ZLJAqY_2k9amnoZhrRDqkRCiRDawPsu9xw3WjHUBiSIIOFkPJ8bJlb9uvFJtXNjdjOEA6pHiQVA4ySmVx4f3JFBQOrvKYZU6vmZutpYAECNOKEaVT0NopRqlcl5vCHfsfZj7T1Ayqf2bh8wOirrKsz0rO5aFjYuDd9ZMtPzlrUaFvMdJtfjaUS2za_ajlG3-90GoUQfS7oF-Bc1p82EOwVyKz5rb56NVOWbkreAtuibmF8TEXe8tj7oV1AZBHwAOPeIYckcSzjI185YWl4hdCKFFlLFbH4PQn-megPmHuSef88Wg6AjS4LpFxjDgEeMxmzJ-4PuQgAop6MNtv22bNy24Bb0u63dEILIsoExnt6g4x-yKprrLjv_T9b54s7WuSeXiPntqn8IHJh6A_jRx8DI7nU9DRdMP9RVVvAvaNXIl3e8oNM3ANwAFQ1IgPZ5WXPwEUCi-O3yFxf8fbp4bymZ_2NZWYGKXcwrIBUOHMqUKk1xmtAv6ntCIX97t1CP6Pz8geGcaM3uxYm09nKbvABqCW2aReXMS_fpTQufb9F8KhcuHQ3fNlsrIItgpi8Oic_-0PWPVHpAFtnMn_taHX3PpePweQDsF_Y5Kmywy0pKUYOg-HDE9Zl7ZzO0z0hWaONV--oi-vYx1LZoN526fbJUos3dpXGGsSBjzpk0aNxwBElfwS_iNz2ZQlBJgKGsU_d1oQdZwGJsa6wLChSojLfgwuD5SHCCqrzXTJPjwftCPfAhoGQQgUIDsD6-OhR5ux-A6tHmE1MWDbuptiRN7zvWqvvgBwmEjzLWBa2UX5YEtz3Mliy8hODKpvXKrxZMuY5a-hSTwfA6_ffyeWVyo75XbzqIJtz1D1M1LndWD_q3bIyQZ3R66zX3LPXOVjOjdklYwDlCzmyE6euAUoF2fUtVkW9-Jx3emVh1VtKeWPopKX6-D10swfB4bC7xPr-3_ejHPO2d2SH8KCCYUkQYuguDOqkfVyyu38tq0Ur-qrON9DszdG-PQ7RX5I9F4yjKlUyNhIY3D0yIQvWoNIkoxaGvHLNaWa4ChA023I7gqD65B5r6xg0c4EadYHxLFT4B_K7shaY8rXYh139kL7SmKGCRYtIXR3ff1gOpGK7LY25x3YH6G30PxkpKiqgNxl97jhiAc2NbyXR-ToFYwL9RclHS6k3xco0qHmiG8xNRZdBTABGFwCEsNFgXkQyRFC9TEgTDEe9y_Ohq_CUAtahH-wNpTixxPF7AQRkkdvhtWSgLB_rXs--vHhsoqUw3DL_KLG9hU6zeAlhcHOcHzx8SXXXd_ZwAN40G_6-tcRdPNG5R14GNGWMl0EZBe10MSh2-XebU629uUwhSOGdJj0Tm1SjMy8S-CU1BZCCQuBuh2lBG7qHw_fc7ZrcG5qLFKTt5OZp68tapKXCC5d4yFn2KcmE2l_E-yzp0TKSAi3yg1ZjaoyOe_YQDLwx65h0gD54mUKup-Uo4DF87xB1YJYzZvYkT-kTQfCqD-QtTFsJ5z4UiNKv9Y1uZuH7y9bt1ytKz2PyM64BhvXxzpYtkVFY_RSCbYIHUY2oSZ6LfKeorAHotv2xHuaXrV2RnG-uznHMKNZgHdm07EOjDS0y_8d4HpBpiV66-b-El_xE_FGhKJwG-BTJKh5HfF3_QNwXYCGUpj0bckhyklUmpiLV-f6Sr6XaJ1q46BodJ5_n4SZpM9yavSok7QbqvmiQRqRGMSqBWJBpAJvRS5If5hCf2DJ6HJ7f879ssZduFIIdQ5tLi8LJlHO2df2Sz8LL5Zv6UoHC9VsrisUspoYiCZNL5KkWAuO2FfZBIESRRzopbJcf95TSDNOEIKqnXuwUgot4WqNlpYPQ-jlZonrq3SI1KKza1U9_vJL04p6uWFfYksw45PkalJfxRCIWPOcJvFN8NkiPNxfAfQ8lb8V-WbLN0MerGj4DZncjG2zc4zfK8A15qwFxUhFNVcdNHzYRYqiK-YLauHu-jaWotLmHg9djs4jdqHw6b5QMNTOy-bqpGvpwXk_ysWTkeWtfeZMkM5mUfBO3ZPnd4y7uvEfZDNudXEWkcf0Z9grZz-kLMvKNJ0KAiezy3l5kqAQATB6JmwkTIQQVdxxazuuJ5lrd65iIS_ZjhbWWu8TIeldTPMtNTqBuyP1H2O6y12wTpNTjmaFebx8OU_PGsUw5n016kqaHL0qpx34cqGSLOpkUlDXLAE-5F8CQlyICPuZm8YCrU0-_JK0nIk9H4Cc1vnb1o2G8DVFRnG57iB3TDtygls5bl4odEnj4D4msN_dQv3eym6TshKAaJXpx7f15DFo51Hz1h2M_KZ5AwKW3VO2K5cb6rDLgLOyndlbxIgaaLBstu5BYbCEhybn6UmHSHqOKakXGi-_OPiZtnbblJ3p6Vyooo8_zNk1a8C154RK7CjZ35bGjMGSAioMRi87EgtjZdKoBvSDTs_UzsPUMjE4vRU4HWj8V1h6T-ncpbLboUHK5OJ1MNrdUoXS0_1Uy28xek1an4yJ8-yQjr5sf6VeKf6YUoxMW9ecG-_bPRUplYt9SsC_5X2WpbvQRvy3zhhArEYchtO1jqwofbulNiP3oB7jwWxffB3N4QHj0GyHc31j242S7l7czMiBdK9XMWUvlXiNwJCrED-dL8X3cIAsqV46dxd2U7XfAF31LTaddmTljWdap94I02qZMx-ltANyXxp2TX-GWSYtLes9e6-tWcEyGYiHPQc8tcrj377tqd2SdzsHdtktJ13Vl67BOGPrB935JWzn3AwzvCx0UyJlQT6MfSPOtp2GyCbKghDy4Q2RDSKPZ5eJlARHZH4cJL_5yWSsBRzZhEq3L62XrKSZ0P5KOCDmKbYt2-gexXZ_zQuFNdF6hIlwsFcmc0vXmp54HJRQxWGIMxaXiO_0P7xBXApdLt5HRVkeR8ANWM878jkm5uyqTQxfaiv-lJb6ar_-qWI9rbgNW6Dj_uvvWrhCwdD4fsLDc9tMRwyGr-d4SBYJkP_4cBHg_6w-i7oGeh_D78VscmtMSz6HYhy2sDjpIeJaQCaeU4wXih4wzta8K5B_G3ppTMexRYmcgt1vscweADZRD2fpS1X0PFjQpehIEm0wDzAzloih9-ZvBE84AXwv2tGOSG2onrq6Uh5bYOotKkwXARYU8VGfeNyAIriVRgSQawkI7Ny_GLlyPdzADjc2hfUtxmuVV331MqhAVr9smON8wRG88QKawu_VTXxxPhH3oiZ9jICAKLew3GVFIqu2KgJEvL4XqBH99kDFE6mOHl1d5exvG6ouKwyZx4ynwyOerGJ-4-4DOPLDCm_leRXyKLPxJGhtxnQibaX4hhFAP9t_v3UrBOV3_Q_sQ58S2Arz0D1Sqf_THe62YX6DFcuOONe5FmkWdUfhv9Mwnx1dBlMS4ulsrW28xKLpLRBr_HGXJkI0DPapOGUkMe3gClKG6hIe-dX0yxiF9bIokDcV6kIM33NbYvEfedKK2fupYBJdnb_fm4mHq4l9EdEgQSRfKxDj4uj3EKKDKAJRFHREcBnvs1gBSqCEOUz7tJf80U4lllHxoBTalrVWhXv2OpLcBTcp0hprxxKMPO8klVAYxeNH1vxZBmduVPvx44W_pQOccbDM9KWrSayUTnxaeQej_uoxnrV09AqC3nmm_tJGVVmr3S-bNywAZ9LHbP7vJO0gRnRBQGHxKfr0rpQGyZKEv4sTnNizsf5PQczn5DYBcxvCCx365jUNCIdiJ2wI5DbEeYKAGpo5E02fj6ygtrNtouBqWbcMunJcD1xPi11JEC_pHMikXpJsHawl9oLbzs6NVcjYcYRt_LR5OmOUhnQS5R83zopVu9z5tQAwp6nRmFLWdgx4aS-9ZogIfeFe4pwJVl1A0lM_ZmM1GZsUswRqL2pcNOUSV2Bq3zODZau807QhctxEo_L_CAv_huCobRe5-x9sFQyozr0L6h_jCf88Fb7oNv05zEIlrdz6KU68ec-5lJkLF7y__rAiS02o6PiM_99XggsnKxYx3AkQRZhZ_qHJEm4qiKETJvaHAta2xAoulSQ87GqVm_cnYVAExkoc8l6Iw1ix6Cip7_A1kEHNfSuIfk5UJtIxBi9n9-zLcQAEaw06P6_x2grRNSORR_DvmmMSbfFLiDowJVJH7yasapoYIVzy1MXTMWAHsN3HUiCcRc2DkWIIwb_soCBzsKTdJ6HVA3NcPGdb4yS2StzpwB_JLNKXhKG5YaqhDMhIMO4ue9IJnO6p_0AiwaliqbkdaI8TeViyNqi1o0RitrlkWV08SfaPGCKB4R1veAi6dtQ68paNRvhwfcaWDSGzBHzLmZOrj2q36CUT94hMzwW4Q_kQuqLkmC9P53UnVneFHSa1uujarlyE9UwkpzV6s4rxB_6PB_1ghPxGUL1h9B-u7ojAdKGPY2-WMIHoc4wzaV1YxpZGIPfSFyA82ZXxQzagG7qi42bQyGQSNJ5_Mud3nd-TsOHUPFzOwF0qQjbJLxM3QU9tV0JjYWQEzHoBDOXawIvmgoC9ik65rcqqmBN7TaPn4um8_Xleuf_T63dStUTuUwXYT8bf_PwIQR7LlUoY3tpHLROMkMOyfPcpVc87hGw7L5TyoPVW4GDObwAVjFFUO28ABrNggup0Wh6qXzIUArnBmHB0o6dPq7yc6v1Zgd8xs7AYssQHg-Nhr1avuyiIjwZN32-iE2VcQyUBAIaBGrNi-EM4qOSoGrQkJUQMzlC7szWNvsHlBxf1GUFErkuYwgmIIwTqF5SjgJIFuDCcoq-sUduq1RttyvOXOk_vot9-KZfdu1eNv4eLgx0yXL18KcyWHTE02dkXkajPlKJeTs-W3fR1NChVzW336h282Mi0k171N-FCYEgnFRCoc4akMelgRJtu_95w6aZBq6WIZfUK8pmgy5wAzy398Ok2-8BMfpPkgw_mPx-CbAj1ixv2RJPhXJSm4UpyiNHK3p6nLjmc9TTJY9tGdN-9qymzisq1W1_6QqYLcz-4tqE8Nz08oVB0cSqaD1dqAMEDSgjf91i8SBcX0tRB--ZBOmXjvPsMtIYVhV3LoVXM7h2t3Nv7u265tyrNA-59XAPA2Pybp88XHULbwK4jZ5LI0YFxdMQbdYcgWC5e9HEmhoapa-btBpiugTLr2vED6mxtPE2ZZWGkT_J0a4pYWncP4TLaUA0v9eBBeqBvE-9YU32mCMYthNNKetqh2XnXympjVWf0HHhdXL14r8LDQBXb2aep2s_ApIHnnanbnCAKxeqjcacbQ4xMMdaVN1zaLvYFnXeLRaGP1JQ4N_p8_iFRxKyDuPvRU3ypYnlF2CnRarhTmHZn7ItrjewGMmFzf8NYJz6FhR2PXKsrVG-s-S-hQayh1zwn2FDM8RJgyfU2c1cUnCNcbW96WptgaPn0RT79jhkRWRizDhZG6iCmccUm8GNQm_jpkEkq2e3ynrUuHxha2NeD-Lf1ti8C2W_qgoD1FM4YZfUT43pPtMlsXeaNR5nkpcKdAZ0ZoiNWRJa2zTrSd0ZkbfJMeXk2Z9oVUF_m6O5oV_JZII9SSFQ9Znh_OpM7QwBcw-McnugGVpuElvgAkZSsbe7zGQhthyJ9FEvW7v8w3QFxjNt9gL7E2nmzVcw0Nh7PKG_BFuV0G8htcnmls5BVDwbq9HsDllqg_AF4H7kkWsRzuML2eeo4T_3grMhVzer3vD1Iw10WcmHTJuLc4NF75Cp1ByWqo-kLOJZAO1Odt6DYv9QLC2Ix8IOKIF2ZLxx36Drzte980oqArEQdc-VlibpVqj2NWGsOJ9IXrK8T_l-l-5OthQkmwLpUQWHszAZmI6TMlCqE3sOP48sX5mZ3N5f_eroF5NRLsAZk1a56lShM_9AS7DZgBBQcaRtLZS8QulN8ePSbx-AZXSnkGp_nX3f1N3Z4U1L_EQZa82F4M2_i3EhZPM0vJFgwGFqnSzTHZ85QvlVaeLodxh3wuZ3ZxWIqq9i6Lh2PpPkQh-txKFEFr_qnZ38dhz9CQvIb8nJFk5owFRXh-8tOxDbnAviGpH1hlqh96zsjPCI5X3rwcq5dybaNoMsCkPRoJGZz_S7Zm2JpX89r5-i5KxGm0PtytS4oz9zWu_KW5ykM-KSEV89g2TQQZAowY6-3Qs45isrH9_tOndyUC2wES7UafB4xJA4tre3tbZLoAfum7oZDkyM3k1l0kJYWvQ1YDYah-07Sq_LPIhVQuAR9OiM_VGxN_ipa1ekjZsBbi_oRd3_u1VyKCyCXQ1H6EjN8R_9nSm-pPWPTUFWVe36UjEJTFsXZT-G4VLAzuyVfF5remVwE3YXdnDPTtXxndNnAcLLuCPXj647eI10NrkUE9-fgC1Cc79ZNQNtKxbEaHtPTFkpoe7-ei_bASEZIBVOYf9d6QgCWU8muKarSSUDaH29xZRbAXvlY645SbAD_7R2KHlCnMxwAX7JbQKAY-IC9JGdd85BIMMk83R3vozFGwhjkqOrjrTB03nb1UqRrTcF2Qw5uhk0GjIkeKs3W0uR560fswGBcMQoqgHmYUZ47p0oa_8udTZFFsHYOxNKStVyoYRU-mCnPgPpo9V2WFCGq4FXNBEFxW-xEfWV_QRldU8kSJz6rRDDSr7QG1IWrZ__7dm2WLIZZ66zKEx5bnCoFpEYCVyIHj1BSIFarereSl2RECxfjJpH5d32qkaB5SdD546pCLjUYI8GndMQegSCC_UdRCo29ha7Ru75yLWJ0xCvTUoqXyAoEG-BWHNE9wuRKuhsygZx8U3Au9Ur3Ddrx3cuHcgNP0S-asOWxht2qFzi4t25W7GpYg-xWaaNorKNAftn4g9axsnNCvwVsrAfFNJcusw2Hqhl3ZQRFXoDqVBuX80-hyYe7SaLdMhk9CeJzRHZL9dVY7u9LeFTjNKMoJB21YDBwQsDHH1cA7zM4hxBbUUKVT3LL6qtB0F0sw1Y3oSBmxx2cU_rpjoo-inbZ0q7YN9oqN4U9L1nZF6qHelJAshRXDfnBQx2UC2_DomeJE3_Kmjn1VthirCk3miuXgoHsPa-7IArQKWDyUnsiHsAx9HHnGuvHix8xVO2az7UpvyDz3ucsLAAqyZo7MqNvBMCZ_kN1rBtxUEhGb4wBjEDFhRDPN8Fa6IOWvDdxd70BOJp7-wLK99QS0cPKidaGI4gOad82AqBJ5HvqQ53nGdCTZFPnKEaqSm9Vn36tv6mNkRvt1cUY-C91BnXU4HHCTubkW9Ug3FrfeKrYHe4LCTvpy3fO10446lXp8zZB7W84z9pw0MICjD_3zJeNWhZ8rIJ6gpKgxXpOPRFvuUBXMXWvIoDV0C2hyzwLwCoeWxSfGeN4f2O-ARi2SdZe3A9DS_WqwB922sEuedH42ChcEroL6xDsnoSkPk3k-51YHTKnJ6jBf1o1OmsYdZa03SE9n1RGsyQ0NhJqIiRQrC3uZlfAeNn63l_jGnZT7OYwfHgXkElnDU_96SgCPcoApvWUNFxyX8hem25EZ-KRkdJL8fFEE3wvy0feMim4ZQQV5FdXqXBl_StE3hNlw1G-4HNwJ-_gPd4Y_c-xUlsnzPquLSV9Xxd9-9ltiohXthHJULQeV3chFq9n2q9QfjMDljdcuPcSViA7pIZ1tGQYByOEyRXcJY4zJVOOp6Wh4NLlKtguawdmgvj1T92ZKZoCLl9SipgLMfFig0ApfOrf0FjesmUgatPjkOo0RHgxyxd_06ZqAKQV81f82FRDDb_2bixlqBZ9CoTuv0aC7SvhlDW5xP1X9tluMTKryqUPmJTqR8CMbU6j_xW_KewA9ioBDhGgcKhNs_uiKbZLtkqk9yeCZosM7RM40SDH0Bn6D2rO2H7JfVAKzT0ARdNFLy7QplyZpSROTfgGCEVEEkwCT-FL9cKFKxhhyy4TD3DGRAMmC9uChJgQPxIEWLF04gdAboOhoBesOF9r9AfmnFCVoqwGv1wPIz1FfkBHikjPXIjr0hRrLQHA6LH0c7pafIf4QgICfiuX9XX8NHKL5qnIrZx81Cz3M53RmRiRzKjMs-OJV9Qotg6K27rBfLlo-7oCfevXSR6KXgeWggqCl84cN92CsgNT4K6aYJ6om4S3btc3jR1uUkCejBi12TBYXF1JmOZvnrUxKcZ5vZjH5gEFU1L_kZbLw46ylEwiDgg4Q1ULUE9S5ap3CCGjUKrZvjoiGZ-X07xjHFHCBmEYdVgVFgOHCge26Xu1F41Q5JbAAGBBJTkx2J4jQxxLpp3-ApTXWgG8_C9fo34CGnX59kKS97twYUI4ecrMlI7UdQV4dzMWiiF0mIkUsCUHL8kKPjLBd8n4VgO1pKe3FvuWRdfZ1jjwnO6igh2dj747_Rk1UqnDPyLTWgLYT9jKi4Kz_fCDAwTonBU-CuliPTgH9ppAD2-3dxQc7dMH2LCfcVjvfrC4wkg8LelXjkwFomTKCROPFHBn2dkCauUKwxUuvKoCK_j8PKcwUI2rY9pZkp6AE440pr1beeHhzbDT10F87SgdvGuDGZrjZLmdTwM0hOkYriGYlkBt_Bhiv-ztVeMKDAgRcWZJas46YNVWdH30hLqjhdjw_XV34q0PpedOx-6qduLQpZuQQq4UN4ft50pVaZWg0hZ_yFbv58SMxfNNPHXtvaGm6eXyh-VZ6pWpQYqGmJWbRPjkvoSkHnTQFo9Hy9by2wEn6Zrs_S-BXsSmbC8u-mwyw799XfOVSOnxbRpf_T76KxAyAfguRDNfkdSSYx4QuCOOX2Uei-6LXhR4OkZ5DWBVHA4nH_9nAy43a-zX0SQlyYtoHH4Yvl_YZji0bn09KQYvpS9b8EdW61SF0fIlr6ovHjx5qj_OgXUOg83nyAcEKmTKj4G7yJFjZydgbWvPP9zJ8Jg9tKeg-2gWU3ohsFjPCHwM5ZW_yfiLshw5XoBMPMSYRAkK7uBxhIqMpplWkzJ55GPC097Xcpu1er4Mpd1gmpBafnBmVCJxhtu48YtwvsikTOJhA1CkixFa8yHWkQhx6OdaTbEPCAk3ePhHXcOjqDI_EjSHeKdmVyLmIoz0qC9d3rzxQMRGg89MGlRoBAwWFun64yUzFN2z_PEI0pbP1MeYPJ-SMAvrZHQ2WcybGPqd_DrlLfFAtM7N-B5RjfDDNmvBik4WTicwe_pDO-2xwiLmy9wuHX6kIXn6BwvwcMy8GKN7e4_BE2ZH2oaHP8ivS1QKml-LJNksPfZuhyo3heFKqQSEtM0TfqQnVziwEnc6k0D2Jp2Kvw57ThvOOpQV-X6TGHemI6LvNFjl5MlLJz_kaMkG8ZZuAvJ2KtL9YmddrFm-7lCg97g586ZBSRBUJKgdQbqUh4LJ1jNulNLbEx3sIHsFWmXCNIliNv7z3RYsCjNMngeV7dx-pk-JSeTvpM4XAJSt9OapHJngRM6vPlG0_Lw6gJtIRFLvk7SkvjNsFJPVgx2FPfuCxySduTCMRHyUME2Nwu0qGq4JkyJXsZ2msANiaraUygA5HrFmvqHhSZN8YVFus2-hRs5wH4UBo1l1vn7VkGskfUx6ZgZ2lmine8hn0kBdsnxy5SHNprRRWWItToOLhKNXY4PrrVnKZD_aM_4LR87FpqlAFgH0F3DuOHDnDtfM2ymr8lu2tULPoFTghlf6-tVRgBdAUx3ycU5rFmArlMetHZNDuxFCCcOzk_CHxHdglUrfH7W8yxNUlyAY7L7yo6XZKfX0BEldJcB0PmRy3ahPDKIR_z1Pet6LwExahK73nIwWiBh1yEcMpZyh6-tcMkq4JD9g1eydqCXdBL14wvz-DaVy0vSFI9YLKFrKi10sR0UUQSbB2RPxhpQMJWJ79hDeV-Gd6cVoy1IXmf6A_hvuICECF3BijJdc6P4uEdg0lHMGUoVg2B4EuEIPMAYScG1SqLRklTWIDOpDOjXfqg_JZLKZGu2RDSHkczTuajAdaGIWTb7cRFvFP3QWBsEc-_vZap6ZHV2Bb-qRguqHp3xJs16cpFyOwB1EN5CxB-5ek27oa0z3EcfQPPved8tJB0QCdHoAsmVwTpd2VrqmeiN2kpB_AGf6DBultm7DLl1cvtWtwLjfxLwpxzF1uYAvAojvwSZPOFmieQaq3KM8ZUfN4h4AEoXGITUqrLsCcjxKbrG0h-RvdWj5bOrcoJ7__26R8Jgsc0_ucoVesdkRA5rkGuSIily7jJGjRcBy-W0ctufmY2tZDDKJgUFTUoJeC5PY3Ys4egkz1XzYwbIV9QXImB-CcY1T3rPCBK53934xWwQEUAmZWpYvjC8SXFxHF5y3zvmrzN_mtlxwOJk_pbBfJL2zOs9hcDHEfkVilZHQzJ-7B0vY0nxOkxJvdhAYBPmVP_Y7oyR5pQ9F9IUTHHAbNXaEOULkIIX-FhWN2p7GpyUpi_anesACpw3dxMElbImkNcs6Ct3J506UvEW3gVpwlggJMNINL_D0T0hFbDEvcZLvau6cKk3lnZWSUZ8FEC-EQITPtl6K9j4WRgjz6kBEmsTsPodPZ-UIbuRPLg0CuDMhDiZAj1dvANpjj9lddJPm8dFReEj6_rv3WcP6BL2KZifGCW4iOYCq7Ls2yKxQymNLlmS-cuZbhpG4NGmczE6-EVvV4e3iVDv0v9kdJAz0eeUT87mUE5A3byA6ZmIOKoV9SKr1BPRqyFslCtK6Emrr6QpfJt-11IV-_-OrTJkGvb2Dvvm6mMEkS95xnMtqxkfSvmSTn37RnqrRmFuJzFRHSIt-0PMDLyupMG6EHDY8_e8i47uZWtX9CfG7wtZQpQCVEwwkx_2g3g-Pxc4Ys5sIIr_RDbgcFm3yo2NcY8BejkdvZWDIcsqBe0grBo9Tqaj9DWkzF26B_Ssbk339_7D34kDavCHTB32vxvm3feUphEskSKNxxWPcyReY3D9lpPElYvPSsghKKX5o7bDNKCG1_4Sx-UlJ5to_IMwKUEeos7f4jshm_MW7Y8o24V2SwlO1bG_s1iU5BQJYx9d9FWGZLp88sv0Z-ltzC_ZISbnxooJhNfXbIQgsdui9kIHD6x_4s2WOgK0pSZFra33flbptb1sEnpnqn0Dn3NJH8psQ7aBBxIEuA8bg5vY1DiCTPQ3H2PIwgmsvcUU5B2jRFbO7Ii9SeFu1cKNK7N_8rLljBPhME-A9sapvrcSQiRQY0oQOga1stXMxmujCrL5caTVAOSipuqn-wgVJvrLDHbT0KoC8LQnc_g_l8oNg0cVat0tEiHnM0l2fcQkP4k_IbvEBNCGfc4SJRIw8c5HWrOXrhMzbfyMdxmppxOpxw1AialWVm9koydnxRnuS6rvTAe_tz9AvT5NimxXV8qAHg08lMPk1UfxO9PXP_EUZuasVER-riBWmb51q3BR_eOhgX9q2ONZrj6dZj-1anT-0AjFKtyaar1GOoCY253M5p1H41RqQQ52psi6BtC8P2mv7CNSRBi1BXdk6-ciEwFVoKbbd8PJ2UJnJhqCXPIY-xajWB0GrfrAEUXgEZ7Ri3yYagjsjDew4qbkAKEYfNK-fFabYkpySe_28t8N5Jc6p8F4cdcMUH9DKMsOHu29fb1QuGodvpSQUhCTW6p4YTDwqdEw4oW1oeLneqmsZxEvy9wFxRvnc07lxAIEQ-5Dr-BN18xKVoy-J-X-4hwXjxu2N3gBvZJMTitEVr4pwa8ORLZb4cKH7m1VBY4iXPG_zmcuP3vJmllHDcdsbUIZOxSiHy2lTda621jueMVMGglK7eOBmeC2Jmtj_DBjvsJd6yKpmD341433fEuGxCs5Jb2ZSgbc2BVgFRMJ5Dzff80ywhtCmq8ktW_5mDboIKR4EQ1FZ2q2c1BOM7JDsiah7z_t-nz8aM50AL0r3TadtWq9cMtiXDypuOEjEcznuNmTRVHhRkdVMzk1EZvcan1mhbI1vDX28FzBx4QsLPGHJgVU2QpT1N_0uCk5zwReyjnUJVH99L608BGrtM1Zfieg7iEM8cB6IbWq2O1MvB1rxg-PYIHPgF0wkfICzWTnO8bsz0L6Iob2ZtI6j_MaVc8GzaSe0vod_MLVjj1Eg8Q2yvXaXLzudzeUU8zwilFvonaeWWVdl6bouvIo58xuOxG8zuuKAimBKP2xOxcw_DNOM7csFiv4ICC7lcJnPnXrgDTBZUV_lhfouYxlFedE_7w5ThgKf6xcrVOsrhSy2SZcXfZ738TW6oeNJ41ETpvvfCyPfKh13a-400ZMt-vfYG3Q0kIR1awIhDkLCITl7S4zkabPL14p0UEMK1ng9IEeyq6DDpz2fTR3u3NfKsIILRElaBJIe8Z4XqK-rCnoby5q79BuaWMCujx8I-QxIcp7mjrxT2aLlwcITC5Q2RXDVMJGNAAcpBDXYKvexwoattqlCiBUTvM3lyfTDx7Fuln1HIkEO_37bMqwcW4_cSU7L1sy-DuR-ZotQ2TrFqT4zU_Cbuj3Jv4OoluNVPnj-oXtGwOU3EZUTZayowF-m7P-mPWa3pi6UqApvkb_u4LsC3vFAwmh9_Ijhn1LZpNa-y5nnqQMu9n8ht_bw1AKJNXLiZHua-Hv9Bwm17p9IM6Y2uz5l6xRNC0GyEzoUC_AKN_HSC4ly-xzQHgxsO-suagKhbqihz6q9aU_A6j34aojgJcIWfsgjYBI2laNGQlNltkclLJumLk2xfUs12QHqYrrb0X0Fy8165ijmvlh_U_5VthH5x6wtTjKSXvT9xJyK175nEh6ve6LNGbWJp3OW2yaHFbcsPFAT0bZJnxC5TVxfdTX9rA483_cM1Liivs86Os7REMg0EQUabTFXdGItioAaIW0D5ryYFyMxPA6UpI5UqlQ4zxzSloqRFnWXi5jzoqaJ4LS7Eq6RrH03nSI02gWNAuJWfqPIogoig91wU_tYqWyUdrPlNLo2cJ1PpKRErleJH1mZoVRGAWirASVLZ-l6JLr_2Pah4YjPjREb0q6E5elOo637mxPqaG1ePorXeE2yv7kOi620x21xMJWXPlUIA752frrfp4n9uM_WFgBSiI_UbNkvkox5Gd2YjufLex42hT9hChoXSr8T1M06CBgvK4KK8Quq-ibSnUhiGzJ_03VJzmQf3Mq_2iSNf8t9iEKSEWbrxMtLnQOsLNTNW6G2_r9XeGMwAWmUB2-HV2HREL9iRuU53zhd-HzJXCilaM2KlMD7NmdbSuRfU2PrgYWDJ9tXx23mKgEsMJLPz3ldwhwhfAFjLJIEHkggcW6zhlF81r9KEg4du15MaefvO9Vmbrjk2LPZEdPZeEvEBq2dWUMYJxoJu-ZAz3tC2kmnsTb2iJY7CGzIrrqUGwOARKiN5GmADOzRjuaKCFoiQ0cRIGaKdpUh0Azeon_XXJmqdiIO4JvWebcUIWabH6qOAsUtKrx7HJlEE68__zOU0J84n0X764cZ4TnVSjoRA3dos-Vrre4k3p1oJNela97CoGES3HA0zXm6dCfi4L4FySD-6nqFA4KjIowHUuuSbWs314hzTxglop-P0vfgcBSAS0P62rRB36xBE_04UprmQkdodL0OzhPNHTT6kU-CQhKphwA2xm7EBBin-8K5ctR8GRbjXJHUkUaK2h7m5SiUnGArOT3P2tF8SFwgvvU2KtWESuIEWVATUOATHnE7xkG3ZAGKzTkKxCFbTeWEYedoze8vrD8X693M4Lac8hjP_W7_YNAuzZUjzvK1iX1VaCwXLij-nvWgP2cbLRPENg5LanLTA2TEoIk4iggUoy1jP2UZZhz7P1mMcQ6xtqgKsF8h6eXwiWTWRaUg7hy-kqzUSUnsymiJpBcyxwsnPpDCtl410jZUc9jK80X_Y-bZr2tEaNw414Dm3jXMRh88d-d_DBj1kDAM45BsZhNDC0gLLuQ4cY6K_Rx6zKFOQqdnepOwdUxMxBqamptkeIBNVIF8n6TH7SXDKZRYEsEfa7b8FX1TLWL_EkgDbJ-qcCqF1XI753MPvObklAgzKUEqHAW9OVnQQNMvqTMmoj-zIWUGw4CsalF3K8tZHYgsKEOykScQspXdxeEK31EUUrrHZL6dTWdU-iasVmrOWWHVQWZONmuVd7TJOBcbYl78COJCjjan_vN-xrIuvRDkAD23qvSi3xi2AZdzjAXj1iduRhEqAsDpAL_FVAAyDxb6Ar81GuBAp7cCyxhrqEYCrBkPgFxNKGUXX2NgVHv637oEtLpBphfOHI2qBTC3MC2-mnD6BhpfHZKmf5BA4gVM8edz6kF2lQOE11WKY7hvpBN5gD2SOBawAkwkws8f02sXrc01y8sQWCL1QEcvb923FxzLmYz4_p67eVYfqKjsazrL2XB9Y4ZgW8XAX5uaj8vdyC0xxcljTK0hSX6qYIj-GB1QiCqIMm7PcUQDmltWiFhW2D71ePNIjYnaAMl4oyjL-RcrYJGMuA-37iW1Szpa7PQA9adCJwujq91nHwdTZNTNNOaPncIEcW2FaYKTCaB0gKwUkI4ig_E8UersJGgWhtHX_swXSrTcUkyo4OruqwUFP5ASbknQVwer-kXTW6KaSm-ElW1ksv7G_-SVZdSb4sE1Y281q3nw6Sz9ZshKWqxSqn_r9AHfk0CFZyMFuKKq9Ou9hmuPKyqJbCaK2zEy5jC1Svb6-iO21u62v8rVz1ZVT00yqf08JlsJqB_AyCg7rwEGHQBz_5zxur9f3piOkxeeqm6eOmhEuf50tU3L1tYVrjQydoP_2eZYK84mj2hYBIvyvW2l4FAxZdvhMoTe0hz4CAq5ZSvdr8ztSCXdY3_YaGvybY1PhLzY0inrKQi_kUtF6fdgArjJQlmxehOJIu28aJ-Ulq7RrOtbx5OF0c012XsEa65UvZQKcde97lWc-bL1lzeCyLvfhuoj8-jz7JabCWLWT09Rt8r2nUnc8feGt5e0s1UxZpoD8i2D4ggaf76x0NhPvL6UA7h8i9chfCD6IZhZm9diTa79GGlPxcd18_Iuxjq4BMdrJSGXdVWbkBMF3rT6iiNLEys2F6Tc-fcbyBVLRHMUsYdv0aLhk9zjClLy_UTq0z6ITAcqqWW3mnphvIUbhgUz62ZXm8XwxifTQUnh5QsqG41oDqmF1CLpOZJlOZEGbrbLBKq2B7cIjvBbmn-ylsDOIFKBVfnf4xS2fbl15khLL25ZTt34uq0oHPLBcNSHp_fi3ZJ1aL-UZ-E9l9vYC6RoBXY_PyJaeNlKsijEGHnSCJQeOiKDZLW3kfak9krMM-psRKs-dAKO9H2ETBhMJihfIwp2N9tBA1_UwT2MHsx3lc85KvWPTZWgXflLJff2ibO99AS4hVVW-A3auLeQtbsmemOYnuQtU9kzqBU25jHRB_NpfxizhaxcjA5QJhBFZ-rquKKiBgq-JKt7Auc_8D7QuBHvI3ed49vsFe8ZYqNSM03TSC9ubT7sMlS6sSzi9bLahXRm8lG5HmJkm1X9jO_WaYOGoMuVESzgj3IWWQ8ysKs5lmgUN1bHQNtQWZcqi8fPHzzd090KWbxY5TI9EVjOzloBWu_oiKt4TTZDGFcytiTMbELuhRtVAvzvfYp623afTITIlYaoPgb-ftXRXSTCyWZ4c1piP6QQPd0ZyvFRanioKL-4IXfyUd327-7f-acd2u3NV5sFis9wGBi3lmgISXr7cQYsfVpNZ0-trqr874Nrd3iG4r3OdOVHonAld65JRtG0So_ktSaiczaUt2cucxA6ns6Ou0DCAmurG07X5YIubA2Ek3yZrL4Jb9vKBEabJhMi174paUK6O4-GkUVWd_VphaF7DeBj7OHDy2gFipcGBfpIg44ciq_yn6qzac2D4BW-HIcq1dxDi2-d7dykvUAs50pVmnYFkzaNkQmeGlINlYhMdg9QvltCkhR9u3d7ctZPm0hlI_nYcGL-IB4ZSB01iZYkvae7FLzX_PC2YMTh3nKJPUlR9l1kDpK3JmxkXJHwOERL2ekCTyPlUdKsoUUu9cEleZ9j3CbIrEemsyDKJJxF0wlezFfnqZJoE7CGAQWgzI3CHO4yOqeWrgChTmE9c6fVJTn9oEKlw-qpWia57Fnl_eazeLy5vVkSHzf76XY5TP6y1vOs4rXuVOIDDVy6U1k1Vy8QmT8rqq-MrCm9skKmIKp0Ped7ywobflKNiYq7lqlUUPQagneLZN4OjTztsqF0O52-vglS2UM4oZx8xeUcFE7wo0dsmY0e-oJ2zMYR8KKHeRruG5ALdo0cl2mqxuMCCDP6gRSxB65DvKEHfu0607zTH3IFJxnKj94f6CJKsN7qh5wjvIA6uLlXRPCLvbjSJGMaKHbHhA5NR6wGQmqHyUMtEZSJRjCFlhBBVyURcudv0i14kEQICij1hiRWi7czOYQQ_fWbWHRhNwMDtuEmfDEW3OMV1JtYDgA1iE86NTQoYLvILdn-flJ9tAX5mgGKt-0R_oduiU1RLnRasm1jMHDnKdDmD64w3Qf0jxxfgNY6QRdnK3hvUVy1WMsCZD7p33PbWGueNZHml8-Xo1b2X3UEjiH1tPzkEV_MZZ6v7JR5sk5p5brkeKuEAnlKfa9YFFlWvN9oUE8fLVbvBHFyQF_ON6LfomC3ypU52moMSEnpKVdi7Nhj_UIT1HPtdvWaQgCwD2CCtuuGnkiGHPMvAPHdhT2blb7YkWHaSOlZqGjpq48hPL9VTT3leJRUVOd1Dsr7-DyRHCaVC4Q4saUX9obmKVV1ccx2NV10o8HlgvvIogHJ4vlHC9iwqCuMqDrQBbOAYyGqC1jKDy-fkb9ACG7RIMVWFJvI_RlT4jHmJUg4-E1Rn1WkWtk81CQCA0juU5lbIE5waISl4ZXGWmyPE2CXQymb735C7VisBHhlxjMfh77OBYrxsliHWHVsAR-Qul54EkPzXbGl3x3Ve6vnQAwc-UcTdquKEGeo8HkQjoZC77DdyXENFdA1WXgt1fFmMGd7HAlFbJTwl1zyNjRgjmXywVpll17-sQFXUQHuOH3J0qilpVW6HZWUQfN7I7vajEs1rw-v-lbTUIEDIqsQCp_dBMP1qRPZJDElitELCkbSHju4dyq1-VcPXRFAHvhqEj2qZlFQZ51Y2jNUoSRgMS9WV4x5cEqpfddt_IKRM_ZtUKCfOmCAlIiYwf84DxbSf12F_3fBwa5B7kHzsYN_wwei-MAKYQRzmnOKxRLcS7VV5Y8p7wEnXZdqB0R0WeuG2VNn6aSGmgP86Q995bmU76crVuV44dJb7i6-eFIM8r4AYtKwNFS4WMD1velUFxFnOmeTjDwQtPzFalPXk6J6IuMkcqt5W8vqVWPyYFkJJGHbjJu0RRw9IshHvAUqfbqGF7JlS74GS0kSd2ypJe-xygnCLlPxnmMJ7fYkWFBwMw5oFjZ897rhkQ4vCnd077uBHVrvIEAlNZfz7IyEZ6wiplvekIWBUsGQ5oiX6nSxK3egzgBpzIuRFl1oGzjwI_xMiJ6AT5tvUD4H39TXFdsXA6MdtiT3KjONxL9F6ohGpe2GvfuL5t71-3Qt0tpSQf0B3vfhpgN5YcCsE8o47fltEL81XzJ_ZWuYuWaQOukayO6297H9U9wqu6ug3dbQIvpW49U_VqJyscsu6sbYYdF-29_nBMgw_vRrGiRp0ErIqDK5RhoqWRLtWyV7ZMTskA7sOief10y8Iua94mn5psRVfWCzMYxy_p677sSjSPS8ra3sOh-5LAIWvK9LH74ymWm-anYr5uQmkDhVELsMzTqxUVPWIXA0ZtIhHQbyso2WdH1ZkF889Z4spRkQNM4pFXItIGVBoRY3LflO_80NIecgcWkDbqOgTrGItENNyOJlHE0RSfRjD5rBhFretKUC9oDttBKG9xWQIAc-jTjTWY0VavJFxSrKlXF8idk6EuFNqVQN3OGGvzmJtAUCw-vKtcM94mvh5Qj9LzH7KnSNbVQeirv6OOEjZX2ovDO1PpYWHOHw6hzYt4Hu5JDaaeAtCRmW9ZgfV_d2jngzXDddQkIUlrmtonT1Ys6qrY-C8rmG8FBxtMSL_Z_3lZ0JKEqPlrrgJ2lEoGH7yrFVy8RPO844O-r7HNYMJj5_8CFd5ndIJ3x7KDxqWsSVgbf6fc2swkNtlCfCujYXKS_EjIZt1Lchs4WQWuZRzNijjIIAnS4JTcBGH3WI2g82GVjlf9neIsSqg_L5VGzyVAd_FAPa_NbJMhZt2nntr91crjfLwnbZfwicqdpN-qwnoDrmI393g1iiNazPAfkLG_M0lJnRqlfhjXtfA0eyj6MX8OTh9IOsNlkVG16vU4H6IHSdHmGewKxy4JZbJBCA2sjXTjLuv_7ozeekikjiao1EmFTrsVpSav462Wzn2TNaJtKwX-HLv_52MENYoirIage-teVkm_2r_Dh0mZYas9cVsFp08FF57BPVaHLRIRp-KinrabtuoB09eQngRQI1PdS4zLOY54XaBbmhZIcN-bc4FY69j-nQuOdcxl2gfLi5QK5Z0hvgoHt271P2PNr4nMaYoUHI7ggM1Q8YoZqUoDefx7mJlN4u4BAlUKUwXQ4oHX7MCa0PGr3n8XuN-r9TTV4KQpaB0I_xzPfqHFYPRHmq_kbriqi3-9jy-v1NErzVfJxoIN88GRsdXqeG39MFoCmVLYRsxbmQYvK-7HHLQw3nQXBmeBz2DVEjJMREvxQFTeAeepVGG141cy8BAklpymr38Rcg6ZSdtjU9DHsm8JG0gYBukaNNnyGXDuvZiAMVlpICCC5KekgbDP98SsG1nzuMOQ1UECvig5zX1Wfs_AIYRGRkxvMluY2w4Iq9ZobdKj2YoGsPWkIojIeY8zHE1jQJVIeHzPAUM9zCi3pp6AmXu_Owiy9W0ZVVDDhLfiMn0xkjCHkmXe_gBoJW2QbnddHW0X8Dav1_OGCBpG-6tN2Vfma6uAQZpWECTO_1bWH8885LJ_1JeZ0jq7V-W1Fbz-tEiI1nees9YkmvxmuDUB3u8EqKS2ToAWvr2usX-ek72oNC5-hg_5YvnuAeIam24UeyXs59z7gxeHw8-HogaJmbliCXh1I0szTO2Az2GA438AjhC3ulS_hTrA1m5d5pA3kvHbWAEq0TMz1iPJyun6uBMqk2XMyXb5Cwaikw5Nsxi2B6WFiRDPcQmiw6Npcjpxn-Va15hH14fpJ6hbxyfOZuvLo6ZezBql0EfMSSfvckcmXpXOgRHB9a5cdlc-yUjW3Xm4hVSmibkCUvHJbdEuQJE6xy7iVJSwpiYlRXR7OqVvGyw0UyFIFg-7SLofwEIqvgL9tt0Q3XIKPpTddNrb6Dy4RmM-A23Z-whkFtFcLG7q3XX1XBk8FTcOoiFZ9F0vXCn2cOSKcbmzYUln5GAhQZZ3FghvrL0lGcRNjgmqdAllsAtBeP5eiQaH3vnmeEsDq5DCiwk_kW4zch5OUDtzy94wC1CpnKgvC-mjQ4vKXL0xuOLYMZm4u4pTQsUXLCm1qpLaIFyQ7JIcM3RUB_HMLvcazanL0IVXknGYiBEOi5tfVDOOLMrHOK1siFe5TUK0yUCoTXYizeb2OdCQXgsi3ALrZLISuViRV8W9RccOGMVG0dan5Pgdv_k41BJEMnY303ncqJJbdmyj-yQQT019PZBdBRgLki-B1c4nXRHWVOgWyJtTS274hKlImHSNj_aWUmttYSVVCauI-rDhmr-x1MveW3FG3pF-1UKy2Kz7izteo1HpqNVpco9Cvm4vyB1FvxBUSxGKtKtt4E-faYEsK-1-JVoMC4H10ItjTDiNGCadN4KbWDhmbKs1WsWB5xKX9GV3WCO48KaI5VVZDcuT1fREe-rGWzK7MoyzuOdTwNL64i69mK9T6Zdjbtlnh2l6w3f8xLCHIJQ5syRqMMtxv-uDL-rIieIMyMn88WyLm5eN7MF670HYIdrzMWtixN_9hKkjgukzuN499XINzbtmhuFdzcpJtJGxEzUFU6hyiv0JaFAA2O0Hgw0vkXAUMwLLfSYcadYjrqw-ss-70dAaaHg6VQaAJy94mXtMDet5P7zj9EBxAtcWwkXuSPBbOBnI5TGGBWKiXB-XkHqAq8ITNMYqDfHqk0O0YRvr1aiLlpvrfoRAqSVVXOJRPr4fkMLyHN-ZS1pBE8tJBbI4xzSUyryRTOk3senUJi1VauAOioaDTUivHWyrWlM_QcY7fYsawODXVQBQ3Mt1ea3PNWGN0KP4U7r7g3OkEzrSHB8x_Lj9oexNtHHFh8W0BO_OTsrpF26rMe3TO4_dGm-wSmAcpDG-cgg-l0qifMJtT5l-vew4hRtY71_Q_4qrt6elfgSlA2_7GAOki60sRvLwN37tOCyGnf3rtwdeZvL77b80MZ_uvwCPmHXfvBcVtgRW8nUYSnpKlNUGNADiqm6L-FjzUAGc7v8UFXWfwVwtZhDltrsfUpSMiHqChu0lo5VVZdsAO6RSXSe14LTnZJSzvE4we64_cTv0LP6wl95mAyI1KBIdtcNE9XILj8GPKZbkeXXCuS5MX8aBcIgZS4RhUhaecMaI0Sf21T6sVUIFNtYy1B-BIjTNREIhmrexfGsB-_hgJfAPxejOaVY5fmCd9xTlf7vElnSj-7U1lEcN2tdifHmMRED9xQSBuhMHfklVtJSbv02fpO6_WWVMWCK18bl4jTtJY0LDSyi7yXe4NIT57mZqU_6aykUZ5QyBroWTq6nFiJQAQP6VNNsUWMwxruNoWJT1tZf0SBZzkR2ArIg65liVkOF0nI5c5yNshjfiqy_IKnk0jq3E5qPNxfGfs1BSm2eFn7Bzt_ulm-5xrcON62q1wxWiDQ1gDAIF9VEKpDoo8KwihfznY7pzjusCo3H1skByuRpaa_LKSSWTVLwGGBVf_IMQ4o-nrAtZIrInhby80ow69SyIoz0kv4vSAlNZQOATLtXKnygbdZkpJN50LboPkxnJtFFhpphl1ITTXAvBmZH0jmg9kv4hZHiioGd6RlLw8bTwRULOsbbQdkFHOM8cnaZhgIrMnmKu831A-J5BGA21i_NxNLUcgSKwT9SQIknk-ErCn3rp82dL0qfCx_veJ13qEwo8kMBxIpjz_LH9kIrVE6Ugp7LpNja5Dsgy4YvgVBxj1toFDQrjJOT1O-8ByArx8HMzesKqxVq1q66K2tR0iILRXzPj09ddZlL5W85FW6wvbBojmw1I1ZWZwADyRL9iizKQJud0GbUp8SYmCHHOmbEoNvW8ewLGDEt3_ImXA6OgmtqXi8fNmokUb62lBgpbKIZxrvNmesMbDqkw8NiJoUPaqqfY7miVImSItg6No2FN9J41xaCqDUvGwyzveA388e8QsVIZt181yAU1Ef3gIrZg-D8MCafj_FEwzpg2pMo5IhxUSSRxJ36BX9vb0J1PEvKX7mo2Y46IiiJPmtRLh6rUkulyFZh_YX5tKh1n5xfqwFpQkWGdtOTaAoyVWNP6rdo6MMqujuLpPAGPe2giwzCyZA6mvfcqefhDFtAl95amhZOGC0ytvqHwC-Gwpc7jFlU26q56o48bi9hHPrwu4a1M80MbXi9aqW2aLQHZlQInzBM5Oq1pyrl1SpF0cjMvh6NheW8FvdS7b_5EFSDvPj0B-2aJJtQ1p7BtKiDobIhi2HJi10f1efq8lY5gGWdhhyShXDuz4731AcCRh-DwDCfZ2wzoXMo44-ePphXW1aL51KeBmd3UI3egbN-Jihz47tZU3E75KlOuNhDf7oDH3lqQaQ569K8vG8H51ebOa7RX9V_ZkY3V8sYVd-ZLSIOkL6XFOwlCtUgKVoxDGm7EsN5iApvPiV10OfT_LMc_1GfnD-euAcuBg_KgoYkyAaQ2sBBta4kIoP-5XPSYzv2iUfsy6NmLI_hfv8iMeqFAvVNWLrhOKblX9YXucjcppnbLftzMlnfswZrbnrgNYrltad7cKLmYQLa0bxwdQvw3AtoL5tIIc81ccZnXiqFX2Y3UxyD-SwF10GMu78eCOnEfMgW8XKYaU5_CcmS5X0h56FYa_Pbt4bTJy4uTKNXp8NSdGp9lwoADWLnKKeazLRm8nm7u2qoPrgqOQrgjeZbaiLB8l05fcCDSe9C48yoEDRRO3ubzLumoCCc6YZG6AdMjeEMNFyMpHrnNRHPL62cLAuuhfdZvufPcIaLWDc3TWad_CTjeyZnlqHkZ8Zzdl4_vCgmaucli-Y4rcuxIPc8j0TbXVKwyQNCvdrC4tMRDr2ry29EJr2bf2kVO6s4xrY_qKVo1X2dQPAFp9FoTh3hiht3gSlLv-o8MI0N1rGzPT5QLaYH2YmG9ioXnP2ifORv_6APDqDEHwYczO9xFMa2zSXNX8clXxQHwx9Z13MnequClr8ZPoKmwsj8LHQ2_WSWZy4OjV1irLkkbLd_5iUf9GiQboL6NU66D3YRJjYPhmItLtXi0vWe7iO3kuKLIYzpbVEwl5THwJwR-tCz8RMXnVN8QZxysDiopxvdDBTE_rymK2RaE76EmneY_GzGY6-53C9b-6f1GmIUfmU03cfEgsjtOonU0M9ZEHQXVcw8e_1D0x2I554Y5M7JO9M9oj5dlSyfaH4h1m2BMNQi8ecQkZsEPgOrWZJD7I3tD4Mlj3AD7R578_7SBCbRlwNRmqPF4oniheN72LHAaw5-NJ8vFyOY08gkjLrQHK6izmTZ9Sl5HC8hlGk9mBEPR1iaD8W0PioBEkZFye6K0QYul684d1cOUE9QdVw6_keFbTSArAn6-J72usv7mF8tb-8yigLzMojiNXuMsdtBtmIBnuOW0khs46WimFlkorTu6SIGdlObnUezNPDypqM_IA_iYFLjTWxVZi8dnPeWOEBHFrk_iyvp1MnlPrVjRDEzkGuV9Dyrqd-MHxQvnt7sgKLr7VJZqH38A84_Bv1WrPT-JK5SV92Y6Ml3IDMLcQ4KxTPRPLviC-CdigKJt84OxleozGBXGLJ7BK8fcw19nH1skBmNTTA2DX5nc6pFp3cjI9CBbLP201-lXMKykfrE_0zJd1RjAVjOlkIBP5hrwDaSqpllYDo1r1Tx7--9KONq16mmYg5ggB_AnN7Yy0Mlg00AzQozTDiWCFocwbHW7t2-EItVXdrGTt0lva-JG4WneJfx1WUDZ6sKMIRX3gI3PaZclJFYDXOX3kVYaj09XqI-c63o9HzXv8b-oGPnH0BJ00GJ39BbDaUbdqoZzYlPBEdPjVLujqkirVQD9dVvdnflvGDtJ5Wos_sx8cS-fE3gRD3j67HdaBN7zEJQ5wOsVEWQ5yyW1lX3CJTg1x6iT91L2mht51yzEzibQusTJ5jVqBOXxxNk3fFQ-IwmW9P0Y2Uwo6P-AVaPVqmFUPFP6-X-JgIhkvsLtsZxIBkHN7JSl7I4rqnTtl7pwY-_001f-GMd-VB7qgzNC0Hkf5NSGZqwdy4whMXV78btz-_oPdcspjen3z_-dj5mV52BXJFPN3u4ll6DWdgR1SLYHCt5iN6mXixMnF3-nHPg_5Dq-sLyg9tKNGmxWDXsLm8oiXqp14kANJA5dK6cXwvxVNX5l3uQWYozkiVUAlNUDia9ZZhovo41AnoV1cNdvA92qsPT1wpcYC5o65ayaCwAv2tIpsMo8ICTcZYegBelECP3esXl81RcOAcg8xqFwWIANc9TUzRH7_vyqZmvllaNrPHMqNcrAcgCAyHMftcI6I58KNyp19YXClvOuvKiwWwIOckAgiBxEvAAbSqAwljk71RfKoYRHZMXJsB85VrkVRDGkvd-2TQ-DvS9kNkHDHAyU1FQZ2UnD4O7Vyhgo4EJdh1XDyFExjDF6gpvgVPcWHSMQyTiE1cpTNLSjzj5Q_cDmeOWXyZpttbuR-Ui_Xgoh5iOpO0iwr6Jc_ZbscvvRS9L_aGavAmarzaR1eK4DxBO35ewE5Wb4RvkoHi26nfKYjXJVzMNchZsJi_KlekLMt7Cab8U73I2-ZuJjISZ4xiJbjXEQFACTF2CDYOWfX1wVYIGRVPMx9a6toW5O0tyKOEsgr88E606f5OqGJThRtVlSP_aBB6dDbiyotF6iXLAFGRYWwwYR93EuOPIfk7y7Va-qTJoIwzlkYWfzCHqy-xXLyk1sTGoHHe3q15x62Tq3-yiX6vOaLXfrSCE2uvopx23DAFo6lL3sAeeK6JzCReFM8YdxFKWYbtbn8eyeeqwU4ahC26PTkgHsef7oh-YsSEDUd6JcUndZStSHopdbwNV3EoC94KP-m6iMECb1tiuXDpy7budBi-SfgAbfnESILSArk162Sp-tWKacl_GWGI0EpZE0n1iZrkbSkk1bgjw8uuTRiqX5MhEAJaClxd-9b9euh2jBexzAqYf5RiVDCkgjb7Yhw0pntS-0uxTPH5htzw19HSRBh5GYclkXluz9GEusOFimClWbyRe8-Rd2oLvZWHTMN5lKnXBCP3g545RjjgUaXnS8A4c2h7VMc4b4dPzW6Q22cgRZBrfjdrpOCjuEd4BrYdHZEqtr-m7lcCrQ_KNB7Zq28c_F4jT1rcgcnewDAJGs00gOFsdf_ecYEtxZwFVpcYAlgCo0asB1msdaKrOVy6UBCGLUsbZNQZjVtGMo_uFPbC7f3kiHt9V5zn-MDlEsvZKB1W_5Psg7ttutcQRMFO4KWcrm_6-AfYPxv8r4II1-0Ka4uvrnT_koDj5tIJngG4EQn1K8FCLJcG_2sCCp4UpOK4_4qXywqFj5IensH8HY65PFd7nIXZMh2L6dcBHE0mBn6TzI0Spw_y8xrsFlXk_GDVcBlCZQP47b7A5jvfzuL5G4lkWS_6EXH3LNFjzx_jMCvycjOz_89WJkKoLDaxZH9ufN9_CxFxth-FgavtM0Y1QkTSKCx9F-QQ6-Ctp5j_hLfYtQItqoAznh1ZyWGbQzBWbVq7bZyYwpLCXMIbfIuO-sad-3xYwI3r1Oa3rScw8af5GR0k-u-nqQlIkV6Sae490TFBUVkP_ljZHm1WrGYuQjMijzcrsrt4CViMDxyX8RN3BzVwn_ukIRH4PcVQokXn7rWPoXCdYyU32BJ0-EuBe2xhPXdDSOB1L3Qc7yS3dVg78g_wBdNE5hla3nSk8YAUFxGQ3JgOEDDOLnmHzYlLhOQ3z867C-Gt_NmxB0awt-ht6r7nbWNd_-qPe1jnZa2_nlNhRoJHVzJIxbjX6GhYRU-xyMH45lbvMmE3DcVTdam8nGwO70rlOx_RlkPvbeJI7iqRYIj_R9Svag4GxyAdDeqIyxkCKjG-ha35rRowTO9O4CSf7HACSJzLM5nk_zuyiidSSkNNHaaX0RAcfk4Ul_jpjIWrO_G2eVC-4PSM-IJtbn_rkQwHXEr7jOxCk7HyzP8yoV40QE0G38pTsBbheiyl7pS_FxC0MiXmG_rzsM-1GvrahnVCt9C4oQYcU3wajOztBD1a4Tucye8W8YwHyvOfx6ogLm0K-9yj2pKUCHdev3HCK6pdsJ9UonWvR8xvaFSQKSrI1m_TNBu4q_yRTclJjx13_7AGUliwnVIKaEibWXzbbZcxIt2QcwPnJlJF20Ju9wC1bMTX3Xg14hC0wRC9o_dZ0BsStDDq-tVk1yI_KAbIK1anEQnKSd6pseVLk2j-A4iD-DYApPlcuPo9JTvoV8CMIoBqs-6isYe1ni49x2HO56ug_3aaWxggGKIu6ZipUyl8SysGfAt8aKr4hHhmhO27Epz-FYT_f7wMfibjh3HrBZ6JlYyxCpDUeVJ6_6rkRX6eq8Tl5wQHRajKaeup3VllFJ9ivwjR4QgMGfu0uOJf9c6s4aIu9k2-7zNzou63lEPFivAar57L3Sfud9bjTBpfcLPdGpowGfCKkHsYQwB52pA7l-I5wjRqihVkbafAKxMTfL-5anQbK7uxQUYM0wtkWw7H-X2sIpkacAoD3OO_TLTFSeLcPPs8gKFJzACkhxIbsxuJIVFN5dyZx10PCecmOOSFIg0WfQkBE-8zD1IT1prjXEUuMO-iStpAA3wJ4NDXWkJ9UUuI0_lKdKhxTsB5YgvAcb0Qi5COEfaY0ouFvESMI6Cozgm-LG8PgaGoglopUbpBytWi6tq7M17EVgz9h0aUeaRwrKfiiSDwndQhLjalGgZ2LJn9fSLOW2vlx8PEac98d5l1Xj7r52n3lJB89MokiyLKc6U36VRfiLnzSD3JlKb0_Ly2UyWsJn525XlKoQgVFFdT2rLfeZ0oZ2sbFSMbdOXPitPWMjfYxJrBqCuALN7vMD5PmOJDASWXiSp7CbwapzxeuHTwBGokp4b9aJadRwZ9Ah4mh1b2QRMufL8kBel_XfWYgEsUXRbryh_W87-5ADEIzazFXUUw0lbBzx5rpwiz4jUabp0_cQcIiv9uJYIwrhPbyLngmlLJl6P669qIVwaY44kaRY5j_qX84J_N3M_U3iHDzm7jHhgqBYUIzBnWFlIqiefOZizUnEGq6ccHPIe172FbDSLj65y5bTwThKB0hhfKJAHmFoqyim2oMsYBjjVKeAfDNXH5sOURJA9uCyonXH0XmyD4hTm08XB9HdcQkEVI-cJ4JzR0G-pwiY9lZ2t6O5DXsMQkJVRutjQRGcpki49pVE54EP_sM1UTqW92NYwcAvWLILYEvjn6op3b6BYUPTcIz2-6L1hfrZJ9dN6NRFbkXdBHlrc8oiabkt0KUYqQP4K6Aj2w2usGQdMoytdlO1Z42VH7eEk5sCcYsg_MHryTGosm0edkLqSNXTSSLFKfI9lXUzdAk34cfXi8OuqVmxNwm94vZ2rvgPefULfONm9JlHlFBYiZaca38OJOExUnn30ljd4NZgFcLzU8MN3P68MpWeLzBhdoRgGdnZAAAzS_oQgiaq3OK6K4Udbil8wwu6yQ_-Vdd1c42O1ltVuE0W4dJhiF9rzBQNNPoWGi5AqmkQ7jLiH6dQ2VhbgSXGCapf_y9S1_ulAcazYAbwc_UeJfRRw5mUew7Wh7RxsIDvEygiTjEvzeRWFRXrBDldZwxD8HB4YkZExZ8qxxJHckt8LsBS0kMO35reOG1oCwyQjYujginexvAM62nCFSCI9dxlOuFjrXTJ3HQJteRjyWRSNuW7M2mC_bghHqzVkokL3xV0UFI7NHfWn1tGaXde6ulkafUnD5C2zKhe5b7i0PBZrZLb2LKClqC3jl3GWzNQxScc_--cBzjfM-H6pe9kb1jASuGks4eEAJVts0uu3qvFpn6_JxAS3MSuTWJc4RijzOH4iUdHYqoGFpIQHqoM9tKPOT_TA100ERJXRAqf5Mc4gfq7lFAFok99k8j14u_DkgpCoz9PXqL-Qx9HCQlPOapZHyMw8xAsYj3DuPIBcd6mO2b5c4vWsLJy8TahbZ6CLPUCK6TPNjKf90E4rDwqRC52ID-i6PD-dUy2LdooiWVOEU27GNVUPF91FOBWiv8FfdUAX9XCZPy85JVetlPNNBVbUB2g4IJTl3fWFK3R97DUhn7LfZg6lfOF_u4svdeVMPlrHBf1yRHn52ycyJKto8Yvowqeiu6NbSSiVLKGAXwNp35jgZ0x8Nx_JyES2MB4deIIbYRv4dm_1aSM0x7bparMVguT-rf5xLRzMIWRlEihqhnmVTo7gC7457w0C8qu8utgunoFryp6QAy6-tSeDslkI2znBWPYZaMWWSrvKPwqCJs5OXCbT7jvRRjTOh7lQ-V-lvc2OpoON3qYcej4nNUHp_l9EtUVH8YfE8DLI06GI8CCNPW2-Mg0ddOTycRxMxAovjfnJHv9IuZiccnjObbr_018bD1MyHQ4xoz6cWiJ1-idOkXlpYi8YclPTW4iOGuhrhQYSvvvafAlTqQ1PTQLaer5p5dLLnRi58TMWMTGAU6B0WMoXDdhYMPl-jOef6bApR9Xr22p5i0K8MTJn461g13FK_DzeHsUKo_5KPU4SO-q0jCFbIbQwpRFJXRolYnRXL2oIXHZm6n4wPFGGPR8b2lj5lzvTn5_ALZ4JWqMtvdh00_cs1hB6x47uCGRFmxjq0NYEai6VG4xiMUVZzFBN1wdR_v6pjA9tyj_U87KXZsoLgr1ySkp9KbWpKWbRc7vQNN_-dm0RyoYByvMEtU6ra5a_jFSokQl9yJ6lX-059i_31dimKq_mbVNOgwYVfgHKrfxlbYY5x7pcvZbqD1JbhTwSrgXkV2WgcgRhwH687hpkXxoah_haQwg7UymBJxMrfhR0AgCeBmQOZul52KoEtq9Vk2J7cSU3HAj5Xq1-IALcIwt42YWQ8WH373EPRhEp7zhC_-rgatGQ-T31kUhUz8vtMR-Zi2Xx-vtHvcXapZBZSQZKpl-DyiSWyJicif0rUg6B8TkI7ZjzzqN5j4nVjBAAsJ6tkp1PZOXwSAUxZVF2ImIWdKM4RiC6iYJ1oZf5gaIzzHl37eEmVkl-GcXrJfOAei4EMMo0WCcoAUG1vzlyXgaXtUM9a6xDDnQiZXzMo-N57KGBtFz5x9ibO0XZsOnsf5xgT05LABdA77BhKaH374kPZ0oiO3QWNmDejttDLPzUAN4vVYg3l3ELm7v4zmHb02As7iDEBrfxm8b_sm4yvCxa07ZVIzP8cuzqznl5O9LV9kIeXJ_VF9KgU-HipB9eQVSCQeaVlbSzQ2YVptuFEXPGkdzSh8srgytBf1urKQM7oWwm3MZfwQxiiWz4bQiaX22ExciKQZiwujWSdjEfHn_ka5GwHdmWj7CmDd7K-yIYhca8r1mY-dxm7RGltM5bBOmJe28smz8vF4x54I2NqcSXdRznCg3sFFuGFiGBCmRoecy0LgKSvoexBggxq6Z43fxiud4o_hrX-wqK7--Wh6pO9dSpi47dEs_l3DJfa8Ve3RMRHABrzIbS9cLBq4f4F_lNVHBE7grQLH4SVFUqWvhbtNSalNMJgqRDJPZltfUvVmvLdEUWeG3x1QaL2kJy-MKpa9QsT6arlfsudO7HwN0UB_e2D4O6XTnsJyHW5ks4g-CwavyWaEjHyASyFlFeaNUJJGCvo9BInX3CWs0fyCpVyALnfmLn6lq9YZVVyM18XHFTdD6ajmddrJo5D0W6bJN-X8AN7y8ZWXkpVVM935I_qFbkqhM9cJbtGfv0HnkjYeappgOYboLb5jJmrHaDZ0aO8VcjfvkhanOUbomyc3ZZM0A9Smx5vKG_5m9vENhHbXg_tGrQ8yO33Ztf-gQ5pol3PTedKqe5HKa8ytBZ6z1skejXTO8dO_PTDlmxaZkh_5VpoCvIn5SWwEX8-tTm2ianwHeDH6PB60S-_jkaxqoYm5b1eCpFhPD78sgWyhmtIucyLX0jbaRndaRBF6kDFS_aNM00UjrsS7mVqDILyhtSLRuqjZ1vUrOvfGxG-DCmYd9u4ogWYZE4J686YgP48u9Wl604tHvJaVvFrHDessW-xMzTNGGZJC7b8HdqHkxkeiHsSRY-ji7D_tZwfkPA-jskxsveCEKCu3GluhpVWFVwY0Dr1nfKPNoqVdHbMMSSWcYY6IjGzyjkKLUO3X06ukhBnOKGalMi1T4M2WpqisdgKAW1a8AeUhD63CpjVq4RSVYApj8u8PcWDM-T9V3ITNBOfRmiVeHIWRK_QoF4gLjh0RRptAcHxUGiccTo4f1YneqXbhuEfz4iK3NrRH9io8A95VtNsGnb16hJAvemLBSStIdv-jY28zKYpatyhYltNyDR76TVs4B-f9vJbo20RiYAChlMHLF7-gl9jGNTyLGtUvEJrYowitsCmn-GiFy0Mz0-1uAn085dFvfzSbQdQpXimX7xXE8g0llYrwmF50EDlJk56Y7Zauu-24efteJAZ_8U5rkPwTpYffwaPKeLYUX42mz4cYtsE=",
+                        "video_metadata": null
+                      },
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": {
+                          "id": "adk-8b4d7887-6bea-4ded-9d31-6f9ca33e86e7",
+                          "args": {
+                            "request": "\nBased on the analysis of the resume and job description, please start the interview.\n\n**JD Key Requirements (technical):**\n- **ML/DL Development:** Design, build, train, and optimize models for time-series forecasting, prediction, anomaly detection, and causal inference.\n- **Data Pipelines:** Create robust pipelines for collection, preprocessing, feature engineering, and labeling of large-scale time-series data.\n- **Scalable Systems & MLOps:** Architect and implement scalable AI/ML infrastructure and MLOps pipelines, including CI/CD and monitoring.\n- **Collaboration:** Work effectively with data engineers, software developers, and domain experts.\n\n**Resume Extracted Skills:**\n- **Time Series:** ARIMA, SARIMA, Prophet, LSTM, Time Series Forecasting for revenue, cash flow, and demand prediction.\n- **Predictive Modeling:** Extensive experience with predictive models for loan default, customer churn, and fraud detection using XGBoost, Random Forest, Logistic Regression.\n- **Data Pipelines:** Expertise in building end-to-end ETL/data pipelines using AWS (Glue, Step Functions, S3), Azure (Data Factory), Databricks, Spark, and Airflow for large-scale data processing.\n- **MLOps & Infrastructure:** Proficient in designing and implementing MLOps pipelines with Jenkins for CI/CD, deploying on cloud infrastructure (AWS, Azure), containerization with Kubernetes (AKS), and monitoring with CloudWatch, Splunk, and Datadog.\n- **Languages & Frameworks:** Python, Java, SQL, Scala, TensorFlow, PyTorch, Keras, scikit-learn, LangChain, Spark.\n- **Cloud Platforms:** Deep experience with AWS (SageMaker, Bedrock, Lambda, etc.) and Azure.\n\n**Gaps & Improvement Areas:**\n- **Causal Inference:** The job description specifically mentions \"causal inference\" as a required skill. Your resume shows strong experience in predictive modeling, A/B testing, and statistical analysis to validate hypotheses, which are related, but it does not explicitly list \"causal inference\" methodologies or projects. This is the primary gap identified.\n\nPlease start the interview by asking a question about the identified gap, Causal Inference.\n"
+                          },
+                          "name": "interviewer_agent",
+                          "partial_args": null,
+                          "will_continue": null
+                        },
+                        "function_response": null,
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "model"
+                  }
+                },
+                {
+                  "author": "router_agent",
+                  "content": {
+                    "parts": [
+                      {
+                        "media_resolution": null,
+                        "code_execution_result": null,
+                        "executable_code": null,
+                        "file_data": null,
+                        "function_call": null,
+                        "function_response": {
+                          "will_continue": null,
+                          "scheduling": null,
+                          "parts": null,
+                          "id": "adk-8b4d7887-6bea-4ded-9d31-6f9ca33e86e7",
+                          "name": "interviewer_agent",
+                          "response": {
+                            "result": "Hello, and thank you for your time today. I've reviewed the analysis of your resume against our job description, and I'd like to start by diving into a few areas.\n\nLet's begin with a scenario. Imagine our company has just launched a new marketing campaign. Shortly after, we observe a significant increase in sales. Your background is strong in predictive modeling, which is great for forecasting, but it doesn't automatically tell us if the campaign *caused* this sales lift.\n\nHow would you approach determining the true causal impact of this marketing campaign on our sales figures?"
+                          }
+                        },
+                        "inline_data": null,
+                        "text": null,
+                        "thought": null,
+                        "thought_signature": null,
+                        "video_metadata": null
+                      }
+                    ],
+                    "role": "user"
+                  }
+                }
+              ]
+            },
+            "creation_timestamp": 1769963926.643015,
+            "rubrics": null,
+            "app_details": {
+              "agent_details": {
+                "router_agent": {
+                  "name": "router_agent",
+                  "instructions": "\nYou are the main Interview Preparation Coordinator (router).\n\nStrict workflow you must follow:\n1. If the user provides resume and/or job description (files or paths) → immediately call analyzer_agent\n2. After analyzer finishes (look for ===ANALYSIS_COMPLETE=== in its output), switch to interviewer_agent\n3. After interviewer finishes (===INTERVIEW_COMPLETE===), call validation_agent\n4. After validation finishes (===VALIDATION_COMPLETE===), show the final validation result to the user\n5. Tell the User ===INTERVIEW SIMULATION COMPLETE===\n\nRules:\n- Ask politely for resume & JD if not provided yet\n- Do NOT analyze documents, ask questions or score answers yourself — delegate to sub-agents\n- Use the tools below to call sub-agents\n- Be professional, patient and encouraging\n- If user says \"start\", \"analyze\", \"interview\", \"feedback\" → act accordingly\n\nYou have access to these sub-agents as tools:\n- analyzer_agent\n- interviewer_agent\n- validation_agent\n\n\nYou are an agent. Your internal name is \"router_agent\". The description about you is \"You are a router agent for an interview simulator workflow. You are given a user resume and job description and need to route it to the appropriate  series of expert subagents to help the user prepare for the interview.\".",
+                  "tool_declarations": [
+                    {
+                      "retrieval": null,
+                      "computer_use": null,
+                      "file_search": null,
+                      "code_execution": null,
+                      "enterprise_web_search": null,
+                      "function_declarations": [
+                        {
+                          "description": "",
+                          "name": "analyzer_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "request": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "request"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "",
+                          "name": "interviewer_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "request": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "request"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        },
+                        {
+                          "description": "",
+                          "name": "validation_agent",
+                          "parameters": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": {
+                              "request": {
+                                "additional_properties": null,
+                                "defs": null,
+                                "ref": null,
+                                "any_of": null,
+                                "default": null,
+                                "description": null,
+                                "enum": null,
+                                "example": null,
+                                "format": null,
+                                "items": null,
+                                "max_items": null,
+                                "max_length": null,
+                                "max_properties": null,
+                                "maximum": null,
+                                "min_items": null,
+                                "min_length": null,
+                                "min_properties": null,
+                                "minimum": null,
+                                "nullable": null,
+                                "pattern": null,
+                                "properties": null,
+                                "property_ordering": null,
+                                "required": null,
+                                "title": null,
+                                "type": "STRING"
+                              }
+                            },
+                            "property_ordering": null,
+                            "required": [
+                              "request"
+                            ],
+                            "title": null,
+                            "type": "OBJECT"
+                          },
+                          "parameters_json_schema": null,
+                          "response": {
+                            "additional_properties": null,
+                            "defs": null,
+                            "ref": null,
+                            "any_of": null,
+                            "default": null,
+                            "description": null,
+                            "enum": null,
+                            "example": null,
+                            "format": null,
+                            "items": null,
+                            "max_items": null,
+                            "max_length": null,
+                            "max_properties": null,
+                            "maximum": null,
+                            "min_items": null,
+                            "min_length": null,
+                            "min_properties": null,
+                            "minimum": null,
+                            "nullable": null,
+                            "pattern": null,
+                            "properties": null,
+                            "property_ordering": null,
+                            "required": null,
+                            "title": null,
+                            "type": "STRING"
+                          },
+                          "response_json_schema": null,
+                          "behavior": null
+                        }
+                      ],
+                      "google_maps": null,
+                      "google_search": null,
+                      "google_search_retrieval": null,
+                      "url_context": null
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "expected_invocation": {
+            "invocation_id": "inv1",
+            "user_content": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Here is my resume: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx and JD: C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx Please analyze and start the interview.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "user"
+            },
+            "final_response": {
+              "parts": [
+                {
+                  "media_resolution": null,
+                  "code_execution_result": null,
+                  "executable_code": null,
+                  "file_data": null,
+                  "function_call": null,
+                  "function_response": null,
+                  "inline_data": null,
+                  "text": "Thank you for your patience. The analysis of your resume and the job description is complete. Based on this analysis, we will now begin the mock interview.",
+                  "thought": null,
+                  "thought_signature": null,
+                  "video_metadata": null
+                }
+              ],
+              "role": "model"
+            },
+            "intermediate_data": {
+              "tool_uses": [
+                {
+                  "id": null,
+                  "args": {
+                    "file_path": "C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_PavanG_Resume_Base.docx"
+                  },
+                  "name": "parse_document_tool",
+                  "partial_args": null,
+                  "will_continue": null
+                },
+                {
+                  "id": null,
+                  "args": {
+                    "file_path": "C:\\IVORSOURCE\\Google ADK\\google_adk_psg\\temp_Jd.docx"
+                  },
+                  "name": "parse_document_tool",
+                  "partial_args": null,
+                  "will_continue": null
+                }
+              ],
+              "tool_responses": [],
+              "intermediate_responses": []
+            },
+            "creation_timestamp": 0.0,
+            "rubrics": null,
+            "app_details": null
+          },
+          "eval_metric_results": [
+            {
+              "metric_name": "tool_trajectory_avg_score",
+              "threshold": 1.0,
+              "judge_model_options": null,
+              "criterion": {
+                "threshold": 1.0,
+                "match_type": "ANY_ORDER"
+              },
+              "score": 0.0,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "response_match_score",
+              "threshold": 0.6,
+              "judge_model_options": null,
+              "criterion": {
+                "threshold": 0.6
+              },
+              "score": 0.2992125984251969,
+              "eval_status": 2,
+              "details": {
+                "rubric_scores": null
+              }
+            },
+            {
+              "metric_name": "final_response_match_v2",
+              "threshold": 0.7,
+              "judge_model_options": null,
+              "criterion": {
+                "threshold": 0.7,
+                "judge_model_options": {
+                  "judge_model": "gemini-2.5-flash",
+                  "num_samples": 3
+                }
+              },
+              "score": 1.0,
+              "eval_status": 1,
+              "details": {
+                "rubric_scores": null
+              }
+            }
+          ]
+        }
+      ],
+      "session_id": "___eval___session___1d791cc2-4fb4-4140-a981-222815ee948d",
+      "session_details": null,
+      "user_id": "test-user"
+    }
+  ],
+  "creation_timestamp": 1769964085.011872
+}
